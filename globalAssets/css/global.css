@@ -1,0 +1,79 @@
+body{
+  margin: 0;
+  width: 100%;
+overflow: hidden;
+}
+
+nav{
+  transition: 0.5s ease;
+  position: relative;
+  width: 100%;
+  height: 4.837929vw;
+  background: #ff2627;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0vw -0.9vw 6.1vw rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.logo{
+  position: absolute;
+  height: 100%;
+  right: 2.805vw;
+  top: 0;
+}
+
+nav form{
+  position: relative;
+  display: flex;
+  width: 39.5742vw;
+  height: 3.43492vw;
+  background: white;
+  border-radius: 20vw;
+}
+
+nav form input{
+  width: 60%;
+  border-radius: 20vw;
+  font-size: 0.96758vw;
+  border: navajowhite;
+  padding-left: 5%;
+}
+
+.searchDropDownContainer{
+  position: absolute;
+  width: 13.30430vw;
+  height: 100%;
+  right: 0;
+  box-sizing: border-box;
+  top: 0;
+  border: 1px solid #e0c900;
+  background: #2b2b2b;
+  border-radius: 10vw;
+}
+
+nav form button{
+  cursor: pointer;
+  height: 3.43492vw;
+  width: 3.43492vw;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  border-radius: 50%;
+  border: navajowhite;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav form button:hover{
+transition: 0.5s;
+  filter: brightness(1.2);
+}
+
+nav form button img{
+  width: 1.59651vw;
+  height: 1.59651vw;
+}

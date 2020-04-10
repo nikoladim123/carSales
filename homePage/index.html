@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../globalAssets/css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <form class="searchBarContainer" action="index.html" method="post">
+          <input class="searchInput" type="text" name="" value="" placeholder="Make or Model">
+          <div class="searchDropDownContainer">
+            <div class="dropDown">
+
+            </div>
+            <button type="submit" name="button">
+              <img class="searchIcon" src="../globalAssets/searchIcon.png" alt="">
+            </button>
+          </div>
+        </form>
+        <a href="#">
+          <img class="logo" src="../globalAssets/logo.jpg" alt="">
+        </a>
+      </nav>
+
+      <a class="mashinAnchor" href="#">
+        <img class="mashin-web" src="images/desktop/mashin-web.png" alt="">
+      </a>
+
+      <img id="banerAnim" class="banerAnimation" src="images/desktop/banerAnimation.png" alt="">
+
+      <div class="narrowBlackContainer">
+        <div class="narrowBlack">
+
+        </div>
+      </div>
+
+      <div class="headerCarouselContainer">
+        <div class="headerCarousel">
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/r1.png" alt="">
+          </div>
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/vespa.png" alt="">
+          </div>
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/affordable.png" alt="">
+          </div>
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/antique.png" alt="">
+          </div>
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/audiSport.png" alt="">
+          </div>
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/bicycle.png" alt="">
+          </div>
+
+          <div class="carrouselBox">
+            <img class="rOne" src="images/desktop/mtb.png" alt="">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="headerTextBox">
+        <div class="whiteRevealAnim"></div>
+        <p>Who is thought to have scrambled parts of cicero's De Finbus Bonorum Et</p>
+        <div class="getStartedContainer">
+          <button class="getStartedButton" type="button" name="button">Get Started</button>
+        </div>
+      </div>
+
+    </header>
+
+    <script class="indexScript" charset="utf-8"></script>
+    <script type="text/javascript">
+      if(window.innerHeight < window.innerWidth){
+        document.getElementsByClassName('indexScript')[0].src = 'js/index.js'
+      }else{
+        document.getElementsByClassName('indexScript')[0].src = 'js/indexMobile.js'
+      }
+    </script>
+  </body>
+</html>
