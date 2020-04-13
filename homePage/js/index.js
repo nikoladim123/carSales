@@ -44,21 +44,21 @@ function moveCarousel() {
     }, 50);
 }
 
-// setTimeout(function () {
-//   moveCarousel()
-//   headerTextBoxAnim()
-//
-//   setInterval(function () {
-//     moveCarousel()
-//     headerTextBoxAnim()
-//   }, 6000);
-//
-// }, 3000);
+setTimeout(function () {
+  moveCarousel()
+  headerTextBoxAnim()
 
-// setInterval(function () {
-//   moveCarousel()
-//   headerTextBoxAnim()
-// }, 6000);
+  setInterval(function () {
+    moveCarousel()
+    headerTextBoxAnim()
+  }, 6000);
+
+}, 3000);
+
+setInterval(function () {
+  moveCarousel()
+  headerTextBoxAnim()
+}, 6000);
 
 // header text anim
 var headerTextBox = document.getElementsByClassName('headerTextBox');
