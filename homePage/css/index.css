@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: #be0616;
+  background: #c04825;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease;
@@ -8,7 +8,7 @@ header {
 }
 
 nav {
-  background: #be0616;
+  background: transparent;
 }
 
 .narrowBlackContainer {
@@ -195,7 +195,7 @@ nav {
   transition: 2s;
   height: 100%;
   display: flex;
-  left: -700vw;
+  left: -800vw;
 }
 
 .headerCarousel img {
@@ -251,4 +251,8 @@ nav {
 .audiSuper{
   max-height: 59vh;
   max-width: 92vw;
+}
+
+.countryTruck{
+  max-height: 69vh;
 }
