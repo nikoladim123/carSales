@@ -1,16 +1,15 @@
-
-header{
+header {
   height: 100vh;
-  background: #396fe3;
+  background: #be0616;
   /* overflow: hidden; */
   transition: 0.5s ease;
 }
 
-nav{
-  background: #396fe3;
+nav {
+  background: #be0616;
 }
 
-.narrowBlackContainer{
+.narrowBlackContainer {
   width: 100%;
   height: 23.70585vw;
   position: absolute;
@@ -19,18 +18,65 @@ nav{
   overflow: hidden;
 }
 
-.narrowBlack{
+.narrowBlack {
   width: 130%;
   position: absolute;
   height: 23.70585vw;
   transform-origin: top right;
-  bottom: -8vw;
+  bottom: -9vw;
   transform: rotateZ(-8deg);
   left: -30%;
   background: black;
 }
 
-.banerAnimation{
+.wineDivSquare {
+  transform: rotate(45deg);
+  position: absolute;
+  border-radius: 1px;
+  background-color: rgba(255, 213, 69, 0.5);
+  width: 3.75vw;
+  height: 3.75vw;
+  border: 0.296vw solid rgba(255, 213, 69, 0.27);
+  outline: 0.1482vw solid rgba(255, 213, 69, 0.55);
+  z-index: 343;
+  bottom: 2vw;
+  left: 50%;
+  margin-left: -1.6vw;
+}
+
+.wineTriangle {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border: 1.136vw solid transparent;
+  border-top: 1.136vw solid #ffd545;
+  transform: rotate(-45deg);
+  top: 2.272vw;
+  left: 2.272vw;
+  animation-name: wineTriangle;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  /* top: 0.5vw; */
+  /* left: 0.5vw; */
+}
+
+@keyframes wineTriangle {
+  0% {
+    opacity: 1;
+    top: 2.272vw;
+    left: 2.272vw;
+  }
+
+  100% {
+    opacity: 0;
+    top: 0.5vw;
+    left: 0.5vw;
+  }
+}
+
+.banerAnimation {
   width: 43.97677vw;
   height: 41.1223vw;
   left: 24vw;
@@ -40,43 +86,45 @@ nav{
   /* transform: scale(1); */
 }
 
-.banerAnimDinamyc{
+.banerAnimDinamyc {
   animation-name: banerAnimation;
   animation-duration: 2s;
 }
 
 @keyframes banerAnimation {
-  0%{
+  0% {
     transform: skew(0deg, 0deg);
     left: 24vw;
   }
 
-  50%{
+  50% {
     left: 100vw;
     transform: skew(-18deg, -18deg);
   }
-  50.001%{
+
+  50.001% {
     left: -50vw;
     transform: skew(18deg, 18deg);
   }
-  100%{
+
+  100% {
     transform: skew(0deg, 0deg);
   }
 }
 
-.mashinAnchor{
+.mashinAnchor {
   margin-top: 3vw;
   /* display: block; */
   margin-right: 1vw;
 }
 
-.mashin-web{
+.mashin-web {
   width: 43.638vw;
   margin-top: 3vw;
   margin-left: 3vw;
 }
 
-.headerTextBox{
+.headerTextBox {
   width: 28.0599vw;
   border-top: 0.82244vw solid white;
   position: absolute;
@@ -86,21 +134,23 @@ nav{
   transform: skewX(0deg);
 }
 
-.whiteRevealAnim{
+.whiteRevealAnim {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background: white;
 }
-.headerTextBox p{
+
+.headerTextBox p {
   color: white;
   font-size: 1.45416vw;
 }
+
 /* .whiteLineThick{
 
 } */
-.getStartedContainer{
+.getStartedContainer {
   width: 13.15916vw;
   float: right;
   border-top: 1px solid white;
@@ -108,24 +158,25 @@ nav{
   display: flex;
   justify-content: center;
 }
-.getStartedButton{
+
+.getStartedButton {
   width: 10.3047vw;
   height: 2.5641vw;
   border-radius: 10vw;
   background: #f8a113;
   border: 1px solid white;
-  box-shadow: 0px 0px 2vw rgba(255,255,255,0.32);
+  box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.32);
   color: white;
   font-size: 1.4416vw;
   transition: 0.5s ease;
 }
 
-.getStartedButton:hover{
+.getStartedButton:hover {
   cursor: pointer;
-  box-shadow: 0px 0px 3vw rgba(255,255,255,0.62);
+  box-shadow: 0px 0px 3vw rgba(255, 255, 255, 0.62);
 }
 
-.headerCarouselContainer{
+.headerCarouselContainer {
   /* border: 1px solid yellow; */
   width: 100%;
   height: calc(100% - 4.837929vw);
@@ -137,19 +188,20 @@ nav{
   justify-content: center;
 }
 
-.headerCarousel{
+.headerCarousel {
   position: relative;
   transition: 2s;
   height: 100%;
   display: flex;
-  left: -600vw;
+  left: -700vw;
 }
-.headerCarousel img{
+
+.headerCarousel img {
   flex-shrink: 0;
   position: relative;
 }
 
-.carrouselBox{
+.carrouselBox {
   height: 100%;
   width: 100vw;
   /* border: 1px solid white; */
@@ -161,24 +213,40 @@ nav{
   position: relative;
 }
 
-.carrouselBox::before{
-  content:'';
-  display:block;
+.carrouselBox::before {
+  content: '';
+  display: block;
   width: 100vw;
   /* border:1px solid; */
-  position:absolute;
-  bottom:0;
-  left:0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   height: 50vh;
   border-radius: 50%;
   z-index: 0;
-  box-shadow: 5px -91vh 12vw rgba(255,255,255,0.15);
+  box-shadow: 5px -91vh 12vw rgba(255, 255, 255, 0.15);
   background: red;
   bottom: -78vh;
 }
 
-
-.rOne{
+.rOne {
   max-height: 58vh;
-    max-width: 73vw;
+  max-width: 73vw;
+}
+
+.pickUp {
+  max-height: 69vh;
+  max-width: 73vw;
+  left: -6vw;
+}
+
+.mtbBike {
+  max-height: 74vh;
+  max-width: 73vw;
+  top: -2vw;
+}
+
+.audiSuper{
+  max-height: 59vh;
+  max-width: 92vw;
 }
