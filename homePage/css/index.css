@@ -1,8 +1,10 @@
 header {
   height: 100vh;
   background: #be0616;
-  /* overflow: hidden; */
+  overflow: hidden;
+  position: relative;
   transition: 0.5s ease;
+  display: block;
 }
 
 nav {
