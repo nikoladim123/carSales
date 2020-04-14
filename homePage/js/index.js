@@ -41,21 +41,39 @@ function moveCarousel() {
     }, 50);
 }
 
-setTimeout(function () {
-  moveCarousel()
-  headerTextBoxAnim()
+// setTimeout(function () {
+//   moveCarousel()
+//   headerTextBoxAnim()
+//
+//   setInterval(function () {
+//     moveCarousel()
+//     headerTextBoxAnim()
+//   }, 6000);
+//
+// }, 3000);
 
-  setInterval(function () {
-    moveCarousel()
-    headerTextBoxAnim()
-  }, 6000);
 
-}, 3000);
 
-setInterval(function () {
-  moveCarousel()
-  headerTextBoxAnim()
-}, 6000);
+var carMovement;
+var carTimeOut;
+
+function startCar() {
+
+  carTimeOut =
+  setTimeout(function () {
+    moveCarousel();
+    headerTextBoxAnim();
+
+    carMovement = setInterval(function () {
+      moveCarousel()
+      headerTextBoxAnim()
+    }, 4000);
+
+  }, 2000);
+}
+
+startCar();
+
 
 // header text anim
 var headerTextBox = document.getElementsByClassName('headerTextBox');
@@ -72,3 +90,32 @@ function headerTextBoxAnim() {
     headerTextBox[0].style.right = '2vw';
   }, 1000);
 }
+
+// car stop/start on hover headerTextBox
+var carCheckSwitch
+headerTextBox[0].addEventListener('mouseleave',()=>{
+  startCar();
+});
+
+headerTextBox[0].addEventListener('mouseenter',()=>{
+  clearTimeout(carTimeOut);
+  clearInterval(carMovement);
+});
+
+// engine sound
+var engineSound = document.getElementById('engineSound');
+
+var soundSwitch = 0;
+function engineSoundFun() {
+  if (!soundSwitch) {
+    engineSound.play();
+  }
+}
+
+engineSound.onended = function() {
+  soundSwitch =1;
+}
+
+window.addEventListener('scroll',()=>{
+  engineSoundFun()
+})

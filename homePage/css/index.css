@@ -115,9 +115,16 @@ nav {
 }
 
 .mashinAnchor {
-  margin-top: 3vw;
+  position: absolute;
+  text-decoration: none;
+  margin-top: 1vw;
   /* display: block; */
   margin-right: 1vw;
+  font-family: 'Morganite-Bold';
+  font-size: 10vw;
+  color: rgba(255,255,255,0.5);
+  margin-left: 6vw;
+  letter-spacing: 0.5vw;
 }
 
 .mashin-web {
@@ -134,6 +141,7 @@ nav {
   top: 12vw;
   transition: 1s;
   transform: skewX(0deg);
+  border-radius: 1vw;
 }
 
 .whiteRevealAnim {
@@ -256,3 +264,48 @@ nav {
 .countryTruck{
   max-height: 69vh;
 }
+
+
+/* sectionClosestToYou start*/
+
+.sectionClosestToYou{
+  position: relative;
+  background: #c8c7cc;
+  border-top: 4.6537vw solid black;
+}
+
+.sectionClosestToYou h2{
+  font-family: 'Morganite-bold';
+  color: #f49700;
+  font-size: 5.81113vw;
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  margin-top: -6.3vw;
+  width: 100%;
+}
+.closestCarsCarouselContainer{
+  padding-top: 3.24455vw;
+  padding-bottom: 14.140435vw;
+}
+
+.carSlider{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carSlider img{
+  transition:0.4s ease;
+  margin: 0 0.581113vw;
+  box-shadow: 1px 1px 1.5vw rgba(0,0,0,0.2);
+  filter:brightness(1);
+  width: 24.45520vw;
+}
+.carSlider img:hover{
+  box-shadow: 1px 1px 3vw rgba(0,0,0,0.25);
+  filter:brightness(1.1);
+  cursor:pointer;
+}
+/* sectionClosestToYou end */
