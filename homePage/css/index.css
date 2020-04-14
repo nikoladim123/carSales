@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: #c04825;
+  background: #7a01ff;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease;
@@ -36,14 +36,14 @@ nav {
   position: absolute;
   border-radius: 1px;
   background-color: rgba(255, 213, 69, 0.5);
-  width: 3.75vw;
-  height: 3.75vw;
+  width: 2.75vw;
+  height: 2.75vw;
   border: 0.296vw solid rgba(255, 213, 69, 0.27);
   outline: 0.1482vw solid rgba(255, 213, 69, 0.55);
   z-index: 343;
-  bottom: 2vw;
+  bottom: 3vw;
   left: 50%;
-  margin-left: -1.6vw;
+  margin-left: -2.8vw;
 }
 
 .wineTriangle {
@@ -67,8 +67,8 @@ nav {
 @keyframes wineTriangle {
   0% {
     opacity: 1;
-    top: 2.272vw;
-    left: 2.272vw;
+    top: 1.272vw;
+    left:1.272vw;
   }
 
   100% {
@@ -79,11 +79,11 @@ nav {
 }
 
 .banerAnimation {
-  width: 43.97677vw;
-  height: 41.1223vw;
+  width: 48.97677vw;
+  height: 52.1223vw;
   left: 24vw;
   position: absolute;
-  top: -1vw;
+  top: -6vw;
   transition: 1s ease;
   /* transform: scale(1); */
 }
@@ -142,6 +142,7 @@ nav {
   transition: 1s;
   transform: skewX(0deg);
   border-radius: 1vw;
+  cursor: pointer;
 }
 
 .whiteRevealAnim {
@@ -203,7 +204,7 @@ nav {
   transition: 2s;
   height: 100%;
   display: flex;
-  left: -800vw;
+  left: -1000vw;
 }
 
 .headerCarousel img {
@@ -234,7 +235,7 @@ nav {
   height: 50vh;
   border-radius: 50%;
   z-index: 0;
-  box-shadow: 5px -91vh 12vw rgba(255, 255, 255, 0.15);
+  box-shadow: 5px -91vh 12vw rgba(255, 255, 255, 0.05);
   background: red;
   bottom: -78vh;
 }

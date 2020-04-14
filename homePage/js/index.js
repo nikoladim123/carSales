@@ -10,7 +10,7 @@ var banerAnim = document.getElementById('banerAnim');
 
 // headerCarousel[0].style.left = (carrouselBox.length-1) * -100 + 'vw';
 
-var colors = ['#ff2627', '#ffc02b','#a19fa4','#e69c3d', '#c90618', '#a54288', '#396fe3', '#be0616', '#c04825'];
+var colors = ['#ff2627', '#ffc02b','#a19fa4','#e69c3d', '#c90618', '#a54288', '#396fe3', '#be0616', '#c04825' ,'#b76083','#7a01ff'];
 var carPosition = (carrouselBox.length-1) * -100;
 function moveCarousel() {
   if(carPosition < 0 ){
