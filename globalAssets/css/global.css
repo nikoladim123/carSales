@@ -3,6 +3,15 @@
   src: url('../fonts/Morganite/Morganite-Bold.ttf');
 }
 
+@font-face {
+  font-family: 'Morganite-Light';
+  src: url('../fonts/Morganite/Morganite-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+}
 
 
 body{

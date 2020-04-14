@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: #7a01ff;
+  background: #793068;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease;
@@ -35,26 +35,34 @@ nav {
   transform: rotate(45deg);
   position: absolute;
   border-radius: 1px;
-  background-color: rgba(255, 213, 69, 0.5);
-  width: 2.75vw;
-  height: 2.75vw;
-  border: 0.296vw solid rgba(255, 213, 69, 0.27);
+  background-color: rgba(255, 213, 69, 0.27);
+  width: 5.409vw;
+  height: 5.409vw;
+  border: 0.6296vw solid rgba(255, 213, 69, 0);
   outline: 0.1482vw solid rgba(255, 213, 69, 0.55);
   z-index: 343;
-  bottom: 3vw;
-  left: 50%;
+  bottom: 2vw;
+  left: 48.5%;
   margin-left: -2.8vw;
+}
+
+.wineDivSquareInside {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  background-color: rgba(255, 213, 69, 0.50);
 }
 
 .wineTriangle {
   position: absolute;
   width: 0px;
   height: 0px;
-  border: 1.136vw solid transparent;
-  border-top: 1.136vw solid #ffd545;
+  border: 2vw solid transparent;
+  border-top: 2vw solid #ffd545;
   transform: rotate(-45deg);
-  top: 2.272vw;
-  left: 2.272vw;
+  top: 2.5vw;
+  left: 2.5vw;
   animation-name: wineTriangle;
   animation-duration: 1s;
   animation-direction: alternate;
@@ -67,14 +75,14 @@ nav {
 @keyframes wineTriangle {
   0% {
     opacity: 1;
-    top: 1.272vw;
-    left:1.272vw;
+    top: 1.65272vw;
+    left: 1.65272vw;
   }
 
   100% {
     opacity: 0;
-    top: 0.5vw;
-    left: 0.5vw;
+    top: 0.75vw;
+    left: 0.75vw;
   }
 }
 
@@ -122,7 +130,7 @@ nav {
   margin-right: 1vw;
   font-family: 'Morganite-Bold';
   font-size: 10vw;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   margin-left: 6vw;
   letter-spacing: 0.5vw;
 }
@@ -204,7 +212,7 @@ nav {
   transition: 2s;
   height: 100%;
   display: flex;
-  left: -1000vw;
+  left: -1100vw;
 }
 
 .headerCarousel img {
@@ -241,10 +249,11 @@ nav {
 }
 
 .rOne {
-  max-height: 66vh;
-  max-width: 76vw;
+  max-height: 79vh;
+  max-width: 78vw;
 }
 
+/*
 .pickUp {
   max-height: 69vh;
   max-width: 73vw;
@@ -264,49 +273,333 @@ nav {
 
 .countryTruck{
   max-height: 69vh;
-}
-
-
+} */
+/* header end */
 /* sectionClosestToYou start*/
-
-.sectionClosestToYou{
+.sectionClosestToYou {
   position: relative;
   background: #c8c7cc;
-  border-top: 4.6537vw solid black;
+  border-top: 10.6537vw solid black;
 }
 
-.sectionClosestToYou h2{
+.sectionClosestToYou h2 {
   font-family: 'Morganite-bold';
   color: #f49700;
   font-size: 5.81113vw;
   position: absolute;
   margin: 0;
   text-align: center;
-  margin-top: -6.3vw;
+  margin-top: -9.3vw;
   width: 100%;
 }
-.closestCarsCarouselContainer{
+
+.closestCarsCarouselContainer {
   padding-top: 3.24455vw;
   padding-bottom: 14.140435vw;
 }
 
-.carSlider{
+.carSlider {
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.carSlider img{
-  transition:0.4s ease;
+.carSlider img {
+  transition: 0.4s ease;
   margin: 0 0.581113vw;
-  box-shadow: 1px 1px 1.5vw rgba(0,0,0,0.2);
-  filter:brightness(1);
+  box-shadow: 1px 1px 1.5vw rgba(0, 0, 0, 0.2);
+  filter: brightness(1);
   width: 24.45520vw;
 }
-.carSlider img:hover{
-  box-shadow: 1px 1px 3vw rgba(0,0,0,0.25);
-  filter:brightness(1.1);
-  cursor:pointer;
+
+.carSlider img:hover {
+  box-shadow: 1px 1px 3vw rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+  cursor: pointer;
 }
+
 /* sectionClosestToYou end */
+/* sectionToDomainName start */
+.sectionToDomainName {
+  position: relative;
+  margin-bottom: -0.5vw;
+}
+
+.sectionToDomainNameBG {
+  width: 100%;
+  position: relative;
+}
+
+.domainNameContentContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 63.922vw;
+  height: 100%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  margin-bottom: 19vw;
+}
+
+.toDomainNameNarrowBG {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.25);
+  transform-origin: top;
+  transform: skewX(-24deg);
+  height: 100%;
+  width: 100%;
+  filter: blur(3px);
+}
+
+.Welcome {
+  width: 12.05811vw;
+  position: absolute;
+  top: 7.35vw;
+  left: 7.5vw;
+}
+
+.toDomainNameTextBox {
+  /* border: 1px solid; */
+  width: 42.37288vw;
+  position: relative;
+  margin-left: 3.3898vw;
+}
+
+.toDomainNameTextBox h2 {
+  font-size: 5.81113vw;
+  font-family: 'Morganite-bold';
+  text-align: center;
+  margin-bottom: 2.90556vw;
+  color: #fab734;
+  margin-top: 10.5138vw;
+}
+
+.toDomainNameTextBox p {
+  font-family: 'OpenSans-Regular';
+  font-size: 1.452784vw;
+  color: white;
+}
+
+.toDomainButtonsContainer {
+  /* border: 1px solid red; */
+  margin-top: 5.5vw;
+  position: relative;
+}
+
+.toDomainButtonBox {
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  margin-bottom: 1vw;
+  margin-left: 5vw;
+}
+
+.toDomainButton {
+  border: 1px solid yellow;
+  width: 4.45520vw;
+  height: 4.45520vw;
+  border-radius: 50%;
+  border: 0.14527845vw solid white;
+  box-sizing: border-box;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}
+
+.toDomainButtonInside {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 0.14527845vw solid gray;
+  position: relative;
+  box-sizing: border-box;
+  transition:0.75s ease;
+}
+
+.toDomainButtonInside:hover{
+  cursor:pointer;
+  background:white;
+  border:0px solid gray;
+  box-shadow: inset 0px 0px 1.4vw 1.4vw rgba(255,0,0,0.75);
+}
+
+.toDomainButtonBox p {
+  /* border: 1px solid; */
+  color: white;
+  font-family: 'OpenSans-Regular';
+  font-size: 1.9370460vw;
+  width: 22vw;
+  margin: 0;
+  margin-left: 2vw;
+}
+
+/* sectionToDomainName end */
+/* SectionOnDomains start */
+.sectionOnDomain {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.onDomainBGdiv {
+  position: relative;
+}
+
+.tailLight {
+  position: relative;
+  width: 100%;
+  transition: 0.15s ease;
+}
+
+.sectionOnDomainSecundContainer {
+  background: #94192c;
+  height: 52.78450vw;
+  border-top: 0.968523vw solid black;
+  border-bottom: 0.968523vw solid black;
+}
+
+.onDomainCar{
+  position: relative;
+  width: 55.10895vw;
+  top: 6vw;
+  left: 4vw;
+}
+
+.onDomainContentContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 76.0290vw;
+  height: 100%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  margin-bottom: 19vw;
+}
+
+.OnDomainNameNarrowBG {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.78);
+  transform-origin: top;
+  transform: skewX(24deg);
+  height: 100%;
+  width: 100%;
+  filter: blur(3px);
+}
+
+.onDomainNameTextBox {
+  position: relative;
+  margin-left: 32.3898vw;
+  width: 39.37288vw;
+}
+
+.onDomainNameTextBox h2 {
+  font-size: 5.81113vw;
+  font-family: 'Morganite-bold';
+  color: #fab734;
+  margin-top: 10.5138vw;
+  text-align: left;
+  margin-bottom: 1.90556vw;
+}
+
+.onDomainNameTextBox p {
+  font-family: 'OpenSans-Regular';
+  font-size: 1.452784vw;
+  color: white;
+}
+
+.onDomainButtonsContainer {
+    /* border: 1px solid red; */
+    margin-top: 15.5vw;
+    position: relative;
+    padding-left: 36vw;
+}
+/* SectionOnDomain end */
+
+/* sectionTrustedDealers start */
+.sectionTrustedDealers{
+  position: relative;
+}
+.trustedDealersBG{
+  position: relative;
+  width: 100%;
+}
+
+.trustedDealersContent{
+  position: absolute;
+  bottom: 6vw;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.trustedDealersContent h3{
+  font-family: 'OpenSans-Regular';
+  font-size: 1.16222vw;
+  margin: 0;
+  position: relative;
+  right: 7.6vw;
+}
+
+.trustedDealersContent h2{
+  font-family: 'Morganite-bold';
+  font-size: 5.81113vw;
+  margin: 0;
+  text-align: center;
+  line-height: 0.8;
+}
+
+.trustedDealersContent h2 span{
+  font-family: 'Morganite-Light';
+  font-weight: 100;
+}
+
+.trustedDealersContent p{
+  font-family: 'OpenSans-Regular';
+  font-size: 1.45278vw;
+  width: 59vw;
+  text-align: center;
+}
+
+/* sectionTrustedDealersBG end */
+
+
+/* test */
+.carousel {
+    position: relative;
+    padding-top: 3.24455vw;
+    padding-bottom: 3.140435vw;
+    background: #c8c7cc;
+    border-bottom: 11vw solid #c8c7cc;
+    overflow: hidden;
+}
+
+.carousel-inner{
+  overflow: visible;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  /* border: 1px solid black; */
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 4vw;
+  color: black;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 4vw;
+  color: black;
+}
