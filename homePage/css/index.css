@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: #793068;
+  background: #49113d;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease;
@@ -279,7 +279,7 @@ nav {
 .sectionClosestToYou {
   position: relative;
   background: #c8c7cc;
-  border-top: 10.6537vw solid black;
+  border-top: 18.6537vw solid black;
 }
 
 .sectionClosestToYou h2 {
