@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background: #f2f2f2;
+  padding-bottom: 10vw;
+}
+
+.banerArea {
+  position: relative;
+  width: 100%;
+  height: 26.9733vw;
+  overflow: hidden;
+}
+
+.banerArea img {
+  width: 100%;
+  position: relative;
+}
+
+/* sectionAboutCar start */
+.sectionAboutCar {
+  position: relative;
+  margin-top: 7vw;
+}
+
+.aboutCarContent {
+  /* border: 1px solid; */
+}
+
+.sectionAboutCar h1 {
+  color: #ff6600;
+  font-size: 2.905569vw;
+  font-family: 'OpenSans-Bold';
+  font-weight: 800;
+}
+
+.sectionAboutCar h2 {
+  color: #ff6600;
+  font-size: 1.74334vw;
+  font-family: 'OpenSans-Regular';
+}
+
+.carDescriptionBox {
+  background: #e5e5e5;
+  padding: 3.00242vw 2.22760vw;
+}
+
+.carDescriptionBox p {
+  font-size: 1.16222vw;
+  font-family: 'OpenSans-Regular';
+}
+
+.contactMe {
+  color: #ff6600;
+  font-family: 'OpenSans-Regular';
+}
+
+.sectionAboutCar h3 {
+  color: #ff6600;
+  font-size: 2.324455vw;
+  margin-top: 4.842615vw;
+  font-family: 'OpenSans-Regular';
+}
+
+/* sectionAboutCar end */
+/* car section start */
+.carSection {
+  position: relative;
+  margin-top: 3vw;
+}
+
+.carsouselContainer {
+  margin-top: 3vw;
+  width: 82% !important;
+  max-width: none;
+}
+
+.carousel-inner {
+  height: 39.5vw;
+}
+
+.carousel-indicators {
+  bottom: 3vw;
+}
+
+.carousel-indicators li {
+  width: 7vw
+}
+
+.carousel-control-next-icon {
+  background-image: url('../images/desktop/right.png');
+  width: 4vw;
+  height: 4vw;
+  margin-top: 32vw;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('../images/desktop/left.png');
+  width: 4vw;
+  height: 4vw;
+  margin-top: 32vw;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 0.75;
+}
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  opacity: 1;
+}
+
+/* car section end */

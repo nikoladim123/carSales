@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  background: #49113d;
+  background: #15966e;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease;
@@ -212,7 +212,7 @@ nav {
   transition: 2s;
   height: 100%;
   display: flex;
-  left: -1100vw;
+  left: -1200vw;
 }
 
 .headerCarousel img {
@@ -393,6 +393,8 @@ nav {
   align-items: center;
   margin-bottom: 1vw;
   margin-left: 5vw;
+  width: 31vw;
+  cursor: pointer;
 }
 
 .toDomainButton {
@@ -417,11 +419,22 @@ nav {
   transition:0.75s ease;
 }
 
-.toDomainButtonInside:hover{
+.toDomainButtonBox:hover .toDomainButtonInside{
   cursor:pointer;
   background:white;
   border:0px solid gray;
   box-shadow: inset 0px 0px 1.4vw 1.4vw rgba(255,0,0,0.75);
+}
+
+.toDomainButtonBox p{
+  transition:1s ease;
+  user-select:none;
+  cursor: pointer;
+}
+
+.toDomainButtonBox:hover p{
+  color:red;
+  transition:1s ease;
 }
 
 .toDomainButtonBox p {
@@ -595,11 +608,92 @@ nav {
 {
   content: '>';
   font-size: 4vw;
-  color: black;
+  color: rgb(30,30,30);
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 4vw;
-  color: black;
+  color: rgb(30,30,30);
+}
+
+/* sectionBikes start */
+.sectionBikes{
+  position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.KTMcontainer{
+  position: relative;
+  height: 48.42615vw;
+  background: #ababab;
+  border-top: 1vw solid black;
+}
+
+.KTMAnimPic{
+  position: absolute;
+  left: 1.5vw;
+  top: 5vw;
+  width: 48.42615vw;
+}
+
+.byciclesContainer{
+  position: relative;
+  border-top: 1vw solid black;
+  border-bottom: 2vw solid black;
+}
+
+.bicyclesBG{
+  width: 100%;
+  position: relative;
+}
+
+
+.bicycleNarrowBG {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.78);
+    transform-origin: top right;
+    transform: skewX(-26deg);
+    height: 100%;
+    width: 100%;
+    filter: blur(3px);
+    left: 52vw;
+}
+.bicycleContainer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 76.0290vw;
+    height: 100%;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    margin-bottom: 19vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.bicycleTextBox {
+    position: relative;
+    margin-left: 32.3898vw;
+    width: 39.37288vw;
+    order: 1;
+    margin-top: 7vw;
+}
+
+.bicycleButtonsContainer {
+    /* border: 1px solid red; */
+    margin-top: 21.5vw;
+    position: relative;
+    padding-left: 40vw;
+}
+/* sectionBikes end */
+
+.sectionMotoBikes{
+  position: relative;
+  border-bottom: 0.3vw solid black;
+}
+.motoSection{
+  width: 100%;
+  position: relative;
 }
