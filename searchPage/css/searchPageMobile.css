@@ -1,0 +1,220 @@
+@media (orientation:portrait) {
+
+  body{
+    font-family: 'OpenSans-Regular';
+  }
+  nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    align-items: center;
+  }
+
+  .socialMedias {
+    width: 35vw;
+  }
+
+  .logo {
+    width: 44vw;
+    position: relative;
+    margin-top: -5vw;
+    top: 7vw;
+    margin-right: 12vw;
+  }
+
+  .userMenu {
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+    margin-top: 4vw;
+  }
+
+  .burgerMenu {
+    display: flex;
+    flex-direction: column;
+    height: 4vw;
+    justify-content: space-between;
+  }
+
+  .avatar {
+    width: 12vw;
+    margin-top: 3vw;
+  }
+
+  .burgerTopLine {
+    width: 100%;
+    height: 1vw;
+    background: white;
+  }
+
+  .burgerBottomLine {
+    width: 100%;
+    height: 1vw;
+    background: white;
+  }
+
+  .searchContainer {
+    display: flex;
+    padding: 0 5vw;
+    position: relative;
+    margin-top: 12vw;
+  }
+
+  .searchBox {
+    border: 5px solid #ffa800;
+    border-radius: 10vw;
+    width: 100%;
+    padding-left: 5%;
+    height: 12vw;
+    box-sizing: border-box;
+    font-size: 5vw;
+  }
+
+  .searchContainer button {
+    background: #ffa800;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 12vw;
+    width: 12vw;
+    right: 5vw;
+    top: 0;
+    border: none;
+  }
+
+  .searchContainer button img {
+    width: 6.5vw;
+    height: 6vw;
+  }
+
+  /* sectionSearchedResult start */
+  .sectionSearchedResult {
+    position: relative;
+    margin-top: 16vw;
+  }
+
+  .resultContainer {
+    position: relative;
+    margin-bottom: 15vw;
+  }
+
+  .filterDolarSignContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vw;
+    opacity: 0;
+    left: -5vw;
+    transition: 0.7s ease;
+  }
+
+  .filterDolarSign {
+    position: relative;
+    width: 13vw;
+    margin-left: 2vw;
+  }
+
+  .filterDolarSignContainer p {
+    font-size: 5vw;
+    margin: 0 2vw;
+  }
+
+  .resultImageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .resultImageContainer img {
+    width: 100%;
+  }
+
+  .detailPopUpButon {
+    position: absolute;
+    right: -7vw;
+    top: 18vw;
+    background: red;
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .detailPopUpButon p {
+    color: white;
+    position: relative;
+    font-size: 10vw;
+    right: 3vw;
+  }
+
+  .priceContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff8826;
+  }
+
+  .priceContainer p {
+    color: white;
+    font-size: 7vw;
+    margin: 2vw 0;
+  }
+
+  .milageContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eceef0;
+    color: #ff8826;
+  }
+
+  .milageContainer p {
+    font-size: 7vw;
+    margin: 2vw 0;
+  }
+
+
+
+
+  /* fixed items start*/
+  .filterPopup{
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 1s ease;
+    left: 0;
+    top: 0;
+    font-size: 10vw;
+    overflow: hidden;
+  }
+  .filterPopup p{
+    width: 90vw;
+  }
+  .carDescriptionPopUp{
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 1s ease;
+    right: 0;
+    top: 0;
+    font-size: 10vw;
+    overflow: hidden;
+  }
+
+  .carDescriptionPopUp p{
+    width: 90vw;
+  }
+  /* fixed items end */
+
+  /* sectionSearchedResult end */
+}
