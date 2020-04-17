@@ -217,4 +217,8 @@
   /* fixed items end */
 
   /* sectionSearchedResult end */
+
+  body::before{
+    display: none;
+  }
 }
