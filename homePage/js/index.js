@@ -122,23 +122,8 @@ function tailLightFun() {
 }
 
 
-// engine sound
-var engineSound = document.getElementById('engineSound');
-
-var soundSwitch = 0;
-function engineSoundFun() {
-  if (!soundSwitch) {
-    engineSound.play();
-  }
-}
-
-engineSound.onended = function() {
-  soundSwitch =1;
-}
-
 
 window.addEventListener('scroll',()=>{
-  engineSoundFun();
   tailLightFun();
 })
 

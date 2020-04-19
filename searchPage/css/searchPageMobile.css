@@ -1,8 +1,8 @@
 @media (orientation:portrait) {
-
-  body{
+  body {
     font-family: 'OpenSans-Regular';
   }
+
   nav {
     position: relative;
     display: flex;
@@ -106,10 +106,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    margin-bottom: 4vw;
+    margin-top: 4vw;
     opacity: 0;
     left: -5vw;
     transition: 0.7s ease;
+  }
+
+  .someFilters {
+    margin-bottom: 14vw;
   }
 
   .filterDolarSign {
@@ -137,7 +141,7 @@
     position: absolute;
     right: -7vw;
     top: 18vw;
-    background: red;
+    background: #fdd830;
     width: 14vw;
     height: 14vw;
     border-radius: 50%;
@@ -151,6 +155,7 @@
     position: relative;
     font-size: 10vw;
     right: 3vw;
+    text-shadow: -4px -2px 4px rgba(0, 0, 0, 0.3);
   }
 
   .priceContainer {
@@ -181,11 +186,38 @@
     margin: 2vw 0;
   }
 
+  /* car detail popup  start*/
+  .carDescriptionPopUp iframe {
+    width: 100vw;
+    position: relative;
+    display: block;
+    height: inherit;
+  }
 
+  .carDescriptionPopUp {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    background: white;
+    transition: 1s ease;
+    right: 0;
+    top: 0;
+    font-size: 10vw;
+    overflow: scroll;
+  }
+
+  .carDescriptionPopUp p {
+    margin: 0;
+    position: absolute;
+    right: 4vw;
+    z-index: 1;
+  }
+
+  /* car detail popup end*/
 
 
   /* fixed items start*/
-  .filterPopup{
+  .filterPopup {
     position: fixed;
     width: 0%;
     height: 100%;
@@ -196,29 +228,40 @@
     font-size: 10vw;
     overflow: hidden;
   }
-  .filterPopup p{
-    width: 90vw;
-  }
-  .carDescriptionPopUp{
-    position: fixed;
-    width: 0%;
-    height: 100%;
-    background: white;
-    transition: 1s ease;
-    right: 0;
-    top: 0;
-    font-size: 10vw;
-    overflow: hidden;
+
+
+  .someFilterSECTION{
+    width: 100vw;
   }
 
-  .carDescriptionPopUp p{
-    width: 90vw;
+  .closeFilter{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 6vw;
+    margin: 7vw 0;
   }
+
+  .filterClose{
+    width: 12vw;
+    transform: rotateY(180deg);
+    margin-left: 3vw;
+  }
+
+  .makeNewSearch{
+    font-family: 'OpenSans-Bold';
+    font-size: 7vw;
+    padding: 3vw 0;
+    width: 80vw;
+    color: white;
+    border: none;
+    background: #fd5a22;
+    margin-left: 10%;
+  }
+
   /* fixed items end */
-
   /* sectionSearchedResult end */
-
-  body::before{
+  body::before {
     display: none;
   }
 }

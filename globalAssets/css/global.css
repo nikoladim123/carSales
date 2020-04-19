@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Morganite-Thin';
+  src: url('../fonts/Morganite/Morganite-Thin.ttf');
+}
+
+@font-face {
   font-family: 'OpenSans-Bold';
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
 }

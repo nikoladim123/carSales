@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../globalAssets/css/global.css">
   <link rel="stylesheet" href="css/carAddPopup.css">
+  <link rel="stylesheet" href="css/carAddPopupMobile.css">
 </head>
 
 <body>
@@ -19,8 +20,19 @@
     </div>
   </header>
 
+  <div class="sellerNameAndIcon">
+    <div class="sellerImageText">
+      <div class="sellerImageBox">
+        <img class="sellerImage" src="images/desktop/sellerImage.png" alt="">
+      </div>
+      <h1>David Schreder</h1>
+    </div>
+    <h2>Toyota Camry For Sale</h2>
+  </div>
+
+
   <section class="sectionAboutCar d-flex justify-content-center">
-    <div class="col-md-8 aboutCarContent">
+    <!-- <div class="col-md-8 aboutCarContent">
       <h1 class="text-center">Toyota Camry 2017, $20,000</h1>
       <h2 class="text-center">180,000 Miles, whit exterior and red interior</h2>
       <div class="carDescriptionBox">
@@ -50,7 +62,104 @@
       </div>
       <a class="float-right contactMe" href="#">Contact me</a>
 
+    </div> -->
+
+
+    <!--Accordion wrapper-->
+    <div class="selerHeading">
+      <h1 class="text-center">Toyota Camry 2017, $20,000</h1>
+      <h2 class="text-center">180,000 Miles, whit exterior and red interior</h2>
     </div>
+    <div class="accordion md-accordion accordion-3 z-depth-1-half" id="accordionEx194" role="tablist" aria-multiselectable="true">
+
+      <ul class="list-unstyled d-flex justify-content-center pt-5 red-text">
+        <li><i class="fas fa-anchor mr-3 fa-2x" aria-hidden="true"></i></li>
+        <li><i class="far fa-life-ring mr-3 fa-2x" aria-hidden="true"></i></li>
+        <li><i class="far fa-star fa-2x" aria-hidden="true"></i></li>
+      </ul>
+
+      <hr class="mb-0">
+
+      <!-- Accordion card -->
+      <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="heading4">
+          <a data-toggle="collapse" data-parent="#accordionEx194" href="#collapse4" aria-expanded="true" aria-controls="collapse4">
+            <h3 class="mb-0 mt-3 red-text">
+              Seller Description <i class="fas fa-angle-down rotate-icon fa-2x"></i>
+            </h3>
+          </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapse4" class="collapse show" role="tabpanel" aria-labelledby="heading4" data-parent="#accordionEx194">
+          <div class="card-body pt-0">
+            <p>
+              Except for a small dent on the rear fender (which you will see in one of the photos velow), the exterior
+              of the can is really spotless. I have parked this car in a shaded area at work and in a garage at home.
+              Except for a small dent on the rear fender (which you will see in one of the photos velow), the exterior
+              of the can is really spotless. I have parked this car in a shaded area at work and in a garage at home.
+            </p>
+            <a class="float-right contactMe" href="#">Contact me</a>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion card -->
+
+      <!-- Accordion card -->
+      <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="heading5">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+            <h3 class="mb-0 mt-3 red-text">
+              Exterio condition <i class="fas fa-angle-down rotate-icon fa-2x"></i>
+            </h3>
+          </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordionEx194">
+          <div class="card-body pt-0">
+            <p>
+              Except for a small dent on the rear fender (which you will see in one of the photos velow), the exterior
+              of the can is really spotless. I have parked this car in a shaded area at work and in a garage at home.
+            </p>
+            <a class="float-right contactMe" href="#">Contact me</a>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion card -->
+
+      <!-- Accordion card -->
+      <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="heading6">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx194" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+            <h3 class="mb-0 mt-3 red-text">
+              Enterior condition <i class="fas fa-angle-down rotate-icon fa-2x"></i>
+            </h3>
+          </a>
+        </div>
+
+        <!-- Card body -->
+        <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6" data-parent="#accordionEx194">
+          <div class="card-body pt-0">
+            <p>
+              Except for a small dent on the rear fender (which you will see in one of the photos velow), the exterior
+              of the can is really spotless. I have parked this car in a shaded area at work and in a garage at home.
+            </p>
+            <a class="float-right contactMe" href="#">Contact me</a>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion card -->
+    </div>
+    <!--/.Accordion wrapper-->
+
+
   </section>
 
 
@@ -99,7 +208,7 @@
 
   </section>
 
-  <section class="sectionAboutCar d-flex justify-content-center">
+  <!-- <section class="sectionAboutCar d-flex justify-content-center">
     <div class="col-md-8 aboutCarContent">
       <h3>Interior Condition</h3>
       <div class="carDescriptionBox">
@@ -118,7 +227,7 @@
       <a class="float-right contactMe" href="#">Contact me</a>
 
     </div>
-  </section>
+  </section> -->
 
 
 

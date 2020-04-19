@@ -3,7 +3,41 @@ body {
   background: #f2f2f2;
   padding-bottom: 10vw;
 }
+/* seller section start */
+.sellerNameAndIcon {
+  position: relative;
+  background: #e3e3e3;
+}
 
+.sellerImageText {
+  padding: 0.1px;
+}
+
+.sellerImageBox {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sellerImage {}
+
+.sellerNameAndIcon h1 {
+  text-align: center;
+  margin-top: 7vw;
+  margin-bottom: 9vw;
+  font-size: 3.48668vw;
+  font-family: 'OpenSans-Bold';
+  font-weight: 900;
+}
+
+.sellerNameAndIcon h2 {
+  font-size: 7.2639225vw;
+  font-family: 'Morganite-Thin';
+  margin-left: 5vw;
+}
+
+/* seller section end */
 .banerArea {
   position: relative;
   width: 100%;
@@ -17,9 +51,43 @@ body {
 }
 
 /* sectionAboutCar start */
+.selerHeading {
+  background: #f9d8cc;
+  width: 89vw;
+  padding: 2vw 0;
+}
+
+.sellerImageBox {
+  position: absolute;
+  top: 2vw;
+  left: 4vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15vw;
+  height: 15vw;
+}
+
+.sellerImage {
+  width: 100%;
+  height: 100%;
+}
+
 .sectionAboutCar {
   position: relative;
   margin-top: 7vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-body p {
+  margin-top: 1vw;
+  font-size: 1.16222vw;
+}
+
+.card-header h3 {
+  font-size: 2.324455vw;
 }
 
 .aboutCarContent {
@@ -27,14 +95,14 @@ body {
 }
 
 .sectionAboutCar h1 {
-  color: #ff6600;
+  color: #d12b2e;
   font-size: 2.905569vw;
   font-family: 'OpenSans-Bold';
   font-weight: 800;
 }
 
 .sectionAboutCar h2 {
-  color: #ff6600;
+  color: #555555;
   font-size: 1.74334vw;
   font-family: 'OpenSans-Regular';
 }
@@ -55,10 +123,15 @@ body {
 }
 
 .sectionAboutCar h3 {
-  color: #ff6600;
+  color: #555555;
   font-size: 2.324455vw;
   margin-top: 4.842615vw;
-  font-family: 'OpenSans-Regular';
+  font-family: 'OpenSans-Bold';
+  font-weight: 900;
+}
+
+.accordion {
+  width: 90vw;
 }
 
 /* sectionAboutCar end */
@@ -70,7 +143,7 @@ body {
 
 .carsouselContainer {
   margin-top: 3vw;
-  width: 82% !important;
+  width: 92.5vw !important;
   max-width: none;
 }
 
@@ -103,7 +176,8 @@ body {
 .carousel-control-prev, .carousel-control-next {
   opacity: 0.75;
 }
-.carousel-control-prev:hover, .carousel-control-next:hover{
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
   opacity: 1;
 }
 

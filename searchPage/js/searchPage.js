@@ -3,7 +3,7 @@ var filterDolarSignContainer = document.getElementsByClassName('filterDolarSignC
 
 function filterAnimations() {
   for (var i = 0; i < filterDolarSignContainer.length; i++) {
-    if (filterDolarSignContainer[i].getBoundingClientRect().y < window.innerHeight/2) {
+    if (filterDolarSignContainer[i].getBoundingClientRect().y < window.innerHeight/1.2) {
       filterDolarSignContainer[i].style.opacity = '1';
       filterDolarSignContainer[i].style.left = '0';
     }else{
