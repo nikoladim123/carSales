@@ -1,6 +1,12 @@
+.wholePageWrapper{
+  width: 72%;
+  margin-left: 14%;
+  background: #f2f2f2;
+}
+
 body {
   margin: 0;
-  background: #f2f2f2;
+  background: #d5d4d4;
   padding-bottom: 10vw;
 }
 /* seller section start */
@@ -28,6 +34,7 @@ body {
   margin-bottom: 9vw;
   font-size: 3.48668vw;
   font-family: 'OpenSans-Bold';
+  color: #333333;
   font-weight: 900;
 }
 
@@ -53,7 +60,7 @@ body {
 /* sectionAboutCar start */
 .selerHeading {
   background: #f9d8cc;
-  width: 89vw;
+  width: 95%;
   padding: 2vw 0;
 }
 
@@ -65,8 +72,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 15vw;
-  height: 15vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 .sellerImage {
@@ -131,7 +138,7 @@ body {
 }
 
 .accordion {
-  width: 90vw;
+  width: 100%;
 }
 
 /* sectionAboutCar end */
@@ -143,7 +150,7 @@ body {
 
 .carsouselContainer {
   margin-top: 3vw;
-  width: 92.5vw !important;
+  width: 100%;
   max-width: none;
 }
 
@@ -152,7 +159,9 @@ body {
 }
 
 .carousel-indicators {
-  bottom: 3vw;
+  bottom: -0.4vw;
+  height: 5vw;
+  margin-bottom: 0;
 }
 
 .carousel-indicators li {
@@ -175,6 +184,7 @@ body {
 
 .carousel-control-prev, .carousel-control-next {
   opacity: 0.75;
+  bottom: 6vw;
 }
 
 .carousel-control-prev:hover, .carousel-control-next:hover {

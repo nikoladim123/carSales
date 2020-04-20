@@ -1,4 +1,9 @@
 @media (orientation:portrait) {
+  .wholePageWrapper {
+    width: 100%;
+    margin-left: 0;
+    background: #f2f2f2;
+}
   body {
     margin: 0;
     background: #f2f2f2;
@@ -191,4 +196,8 @@
 
   /* car section end */
 
+/* accrodion */
+.accordion > .card > .card-header{
+  background-color: #e5e5e5;
+}
 }
