@@ -13,9 +13,10 @@ nav{
 
 .logo{
   position: absolute;
-  height: 100%;
+  /* height: 8.276863vw; */
   right: 2.805vw;
   top: 0;
+  width: 9.513262vw;
 }
 
 nav form{
@@ -351,7 +352,7 @@ nav {
 .rOne {
   /* max-height: 100%; */
   /* max-width: 100%; */
-  height: 67.76379vw;
+  height: 62.2760vw;
   left: -3vw;
   top: -2vw;
 }
@@ -391,8 +392,10 @@ nav {
   position: absolute;
   margin: 0;
   text-align: center;
-  margin-top: -9.3vw;
+  margin-top: -7.3vw;
   width: 100%;
+  z-index: 1;
+  position: absolute;
 }
 
 .closestCarsCarouselContainer {
@@ -798,4 +801,12 @@ nav {
 .motoSection{
   width: 100%;
   position: relative;
+}
+
+
+
+/* bootstrap edits */
+.carousel-control-prev-icon, .carousel-control-next-icon{
+  /* font-family: 'OpenSans-Thin'; */
+  font-weight: 100;
 }

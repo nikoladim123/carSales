@@ -45,7 +45,8 @@ nav{
 
 .logo{
   position: absolute;
-  height: 100%;
+  /* height: 100%; */
+  width: 9.513262vw;
   right: 2.805vw;
   top: 0;
 }

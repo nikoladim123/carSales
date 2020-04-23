@@ -85,7 +85,7 @@ body {
 
 .sectionAboutCar {
   position: relative;
-  margin-top: 7vw;
+  margin-top: 1vw;
   flex-direction: column;
   align-items: center;
 }
@@ -143,6 +143,26 @@ body {
 
 .accordion {
   width: 100%;
+}
+
+.car-header-span {
+    font-family: 'OpenSans-Thin';
+    font-size: 2.83vw;
+    margin-left: 1vw;
+    position: relative;
+    top: 0.25vw;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card h3:hover{
+transition: 0.5s ease;
+filter: brightness(1);
+}
+.card h3:hover{
+  filter: brightness(2.2);
 }
 
 /* sectionAboutCar end */
