@@ -92,7 +92,7 @@ nav {
   position: absolute;
   bottom: 0;
   left: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .narrowBlack {
@@ -116,7 +116,7 @@ nav {
   border: 0.6296vw solid rgba(255, 213, 69, 0);
   outline: 0.1482vw solid rgba(255, 213, 69, 0.55);
   z-index: 343;
-  bottom: 11vw;
+  bottom: 20vw;
   left: 48.5%;
   margin-left: -2.8vw;
 }
