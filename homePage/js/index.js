@@ -5,12 +5,36 @@ console.log('i work on desktop');
 var headerCarousel = document.getElementsByClassName('headerCarousel');
 var carrouselBox = document.getElementsByClassName('carrouselBox');
 var header = document.getElementsByClassName('header');
+var banerCarBG = document.getElementsByClassName('banerCarBG');
+var banerBGimg = document.getElementsByClassName('banerBGimg');
+
 
 var banerAnim = document.getElementById('banerAnim');
 
+// bg anims
+function banerBGimgFun(broj) {
+  for (var i = 0; i < banerBGimg.length; i++) {
+    banerBGimg[i].style.opacity = '0';
+  }
+  banerBGimg[broj].style.opacity = '1';
+}
+
+// mashinAnchor baner text anim
+var mashinAnchor = document.getElementsByClassName('mashinAnchor');
+function mashinAnchorAnimFun() {
+  mashinAnchor[0].style.left = '-35vw';
+  mashinAnchor[0].style.opacity = '0';
+  setTimeout(function () {
+    mashinAnchor[0].style.left = '0vw';
+    setTimeout(function () {
+    mashinAnchor[0].style.opacity = '1';
+  }, 500);
+  }, 500);
+}
+
 // headerCarousel[0].style.left = (carrouselBox.length-1) * -100 + 'vw';
 
-var colors = ['#ff2627', '#ffc02b','#a19fa4','#e69c3d', '#c90618', '#b42994', '#396fe3', '#be0616', '#c04825' ,'#d52e60','#6700ff', '#49113d', '#98ca4f'];
+var colors = ['#ff2627', '#ffc02b','#a19fa4','#e69c3d', '#c90618', '#b42994', '#396fe3', '#be0616', '#c04825' ,'#d52e60','#6700ff', '#49113d', '#98ca4f', '#000'];
 var carPosition = (carrouselBox.length-1) * -100;
 function moveCarousel() {
   if(carPosition < 0 ){
@@ -20,6 +44,8 @@ function moveCarousel() {
     carPosition = (carrouselBox.length-1) * -100;
     header[0].style.background = colors[-(carPosition/100)];
   }
+  banerBGimgFun(-(carPosition/100));
+  mashinAnchorAnimFun()
 
   header[0].style.background = colors[-(carPosition/100)];
 

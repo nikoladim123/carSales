@@ -75,7 +75,7 @@ nav form button img{
 
 header {
   height: 100vh;
-  background: #98ca4f;
+  background: transparent !important;
   overflow: hidden;
   position: relative;
   transition: 0.5s ease;
@@ -208,6 +208,14 @@ nav {
   color: rgba(255, 255, 255, 0.5);
   margin-left: 6vw;
   letter-spacing: 0.5vw;
+  z-index: 1;
+  transition: 0.5s ease;
+  left: 0vw;
+}
+
+.mashinAnchor:hover{
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
 }
 
 .mashin-web {
@@ -287,12 +295,29 @@ nav {
   transition: 2s;
   height: 100%;
   display: flex;
-  left: -1200vw;
+  left: -1300vw;
 }
 
 .headerCarousel img {
   flex-shrink: 0;
   position: relative;
+}
+
+.banerCarBG{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(0,0,0,0.7); */
+}
+
+.banerBGimg{
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .carrouselBox {
@@ -301,7 +326,7 @@ nav {
   /* border: 1px solid white; */
   flex-shrink: 0;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   transition: .5s ease;
   position: relative;
@@ -324,8 +349,9 @@ nav {
 }
 
 .rOne {
-  max-height: 79vh;
-  max-width: 78vw;
+  /* max-height: 100%; */
+  /* max-width: 100%; */
+  height: 67.76379vw;
 }
 
 /*
