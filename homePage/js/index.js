@@ -67,16 +67,7 @@ function moveCarousel() {
     }, 50);
 }
 
-// setTimeout(function () {
-//   moveCarousel()
-//   headerTextBoxAnim()
-//
-//   setInterval(function () {
-//     moveCarousel()
-//     headerTextBoxAnim()
-//   }, 6000);
-//
-// }, 3000);
+
 
 
 
@@ -88,11 +79,11 @@ function startCar() {
   carTimeOut =
   setTimeout(function () {
     moveCarousel();
-    headerTextBoxAnim();
+    // headerTextBoxAnim();
 
     carMovement = setInterval(function () {
       moveCarousel()
-      headerTextBoxAnim()
+      // headerTextBoxAnim()
     }, 4000);
 
   }, 2000);
@@ -102,32 +93,32 @@ startCar();
 
 
 // header text anim
-var headerTextBox = document.getElementsByClassName('headerTextBox');
+// var headerTextBox = document.getElementsByClassName('headerTextBox');
 
-function headerTextBoxAnim() {
-  headerTextBox[0].style.transform = 'skewX(30deg)';
-  headerTextBox[0].style.filter = 'blur(5px)';
-  headerTextBox[0].style.opacity = '0';
-  headerTextBox[0].style.right = '-10vw';
-  setTimeout(function () {
-    headerTextBox[0].style.transform = 'skewX(0deg)';
-    headerTextBox[0].style.filter = 'blur(0px)';
-    headerTextBox[0].style.opacity = '1';
-    headerTextBox[0].style.right = '2vw';
-  }, 1000);
-}
+// function headerTextBoxAnim() {
+//   headerTextBox[0].style.transform = 'skewX(30deg)';
+//   headerTextBox[0].style.filter = 'blur(5px)';
+//   headerTextBox[0].style.opacity = '0';
+//   headerTextBox[0].style.right = '-10vw';
+//   setTimeout(function () {
+//     headerTextBox[0].style.transform = 'skewX(0deg)';
+//     headerTextBox[0].style.filter = 'blur(0px)';
+//     headerTextBox[0].style.opacity = '1';
+//     headerTextBox[0].style.right = '2vw';
+//   }, 1000);
+// }
 
 
 // car stop/start on hover headerTextBox
-var carCheckSwitch
-headerTextBox[0].addEventListener('mouseleave',()=>{
-  startCar();
-});
-
-headerTextBox[0].addEventListener('mouseenter',()=>{
-  clearTimeout(carTimeOut);
-  clearInterval(carMovement);
-});
+// var carCheckSwitch
+// headerTextBox[0].addEventListener('mouseleave',()=>{
+//   startCar();
+// });
+//
+// headerTextBox[0].addEventListener('mouseenter',()=>{
+//   clearTimeout(carTimeOut);
+//   clearInterval(carMovement);
+// });
 
 
 // tailLight anim

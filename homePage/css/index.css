@@ -53,7 +53,7 @@ nav form button{
   width: 3.43492vw;
   position: absolute;
   right: 0;
-  top: -1px;
+  top: 0px;
   border-radius: 50%;
   border: navajowhite;
   background: #f2f2f2;
@@ -74,7 +74,7 @@ nav form button img{
 
 
 header {
-  height: 100vh;
+  height: 67.76379vw;
   background: transparent !important;
   overflow: hidden;
   position: relative;
@@ -116,7 +116,7 @@ nav {
   border: 0.6296vw solid rgba(255, 213, 69, 0);
   outline: 0.1482vw solid rgba(255, 213, 69, 0.55);
   z-index: 343;
-  bottom: 2vw;
+  bottom: 11vw;
   left: 48.5%;
   margin-left: -2.8vw;
 }
@@ -352,6 +352,7 @@ nav {
   /* max-height: 100%; */
   /* max-width: 100%; */
   height: 67.76379vw;
+  left: -3vw;
 }
 
 /*
@@ -380,7 +381,6 @@ nav {
 .sectionClosestToYou {
   position: relative;
   background: #c8c7cc;
-  border-top: 18.6537vw solid black;
 }
 
 .sectionClosestToYou h2 {
