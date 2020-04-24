@@ -355,6 +355,7 @@ nav {
   height: 62.2760vw;
   left: -3vw;
   top: -2vw;
+  border:2px solid red;
 }
 
 /*
@@ -809,4 +810,26 @@ nav {
 .carousel-control-prev-icon, .carousel-control-next-icon{
   /* font-family: 'OpenSans-Thin'; */
   font-weight: 100;
+}
+
+
+
+
+/* temp */
+.TEMPMARGIN {
+    position: absolute;
+    top: 40vw;
+    width: 100%;
+    border: 3px solid red;
+    z-index: 2323;
+}
+
+.mynext{
+  font-size: 3vw;
+  position: absolute;
+  z-index: 23223;
+  top: 10vw;
+  color: red;
+  cursor: pointer;
+  left: 3vw;
 }

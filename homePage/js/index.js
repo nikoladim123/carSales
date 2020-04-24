@@ -74,22 +74,22 @@ function moveCarousel() {
 var carMovement;
 var carTimeOut;
 
-function startCar() {
-
-  carTimeOut =
-  setTimeout(function () {
-    moveCarousel();
-    // headerTextBoxAnim();
-
-    carMovement = setInterval(function () {
-      moveCarousel()
-      // headerTextBoxAnim()
-    }, 4000);
-
-  }, 2000);
-}
-
-startCar();
+// function startCar() {
+//
+//   carTimeOut =
+//   setTimeout(function () {
+//     moveCarousel();
+//     // headerTextBoxAnim();
+//
+//     carMovement = setInterval(function () {
+//       moveCarousel()
+//       // headerTextBoxAnim()
+//     }, 4000);
+//
+//   }, 2000);
+// }
+//
+// startCar();
 
 
 // header text anim
@@ -154,3 +154,10 @@ for (var i = 0; i < toDomainButtonBox.length; i++) {
     location.href = window.location.href.substring(0, window.location.href.length - 19) + 'carAddPopup/carAddPopup.html';
   })
 }
+
+
+// more temps
+var mynext = document.getElementsByClassName('mynext');
+mynext[0].addEventListener('click',()=>{
+  moveCarousel()
+})
