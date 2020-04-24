@@ -34,16 +34,29 @@ function mashinAnchorAnimFun() {
 
 // headerCarousel[0].style.left = (carrouselBox.length-1) * -100 + 'vw';
 
-var colors = ['#ff2627', '#ffc02b','#a19fa4','#e69c3d', '#c90618', '#b42994', '#396fe3', '#be0616', '#c04825' ,'#d52e60','#6700ff', '#49113d', '#98ca4f', '#000'];
-var carPosition = (carrouselBox.length-1) * -100;
+var colors = ['#ff2627', '#ffc02b','#a19fa4','#e69c3d', '#c90618', '#b42994', '#396fe3', '#be0616', '#c04825' ,'#d52e60','#6700ff', '#49113d', '#98ca4f', '#000', '#000'];
+// var carPosition = (carrouselBox.length-1) * -100;
+var carPosition = 0;
 function moveCarousel() {
-  if(carPosition < 0 ){
-    carPosition += 100;
+  if(carPosition > (carrouselBox.length-1) * -100 ){
+    carPosition -= 100;
     console.log(-(carPosition/100));
   }else{
-    carPosition = (carrouselBox.length-1) * -100;
-    header[0].style.background = colors[-(carPosition/100)];
+    headerCarousel[0].style.transition = '0s';
+    setTimeout(function () {
+      carPosition = 0;
+      headerCarousel[0].style.left = carPosition + 'vw';
+    }, 50);
+    setTimeout(function () {
+      headerCarousel[0].style.transition = '2s';
+      setTimeout(function () {
+        moveCarousel()
+      }, 120);
+    }, 100);
+    // carPosition = 0;
+    // header[0].style.background = colors[-(carPosition/100)];
   }
+
   banerBGimgFun(-(carPosition/100));
   mashinAnchorAnimFun()
 
@@ -74,22 +87,22 @@ function moveCarousel() {
 var carMovement;
 var carTimeOut;
 
-// function startCar() {
-//
-//   carTimeOut =
-//   setTimeout(function () {
-//     moveCarousel();
-//     // headerTextBoxAnim();
-//
-//     carMovement = setInterval(function () {
-//       moveCarousel()
-//       // headerTextBoxAnim()
-//     }, 4000);
-//
-//   }, 2000);
-// }
-//
-// startCar();
+function startCar() {
+
+  carTimeOut =
+  setTimeout(function () {
+    moveCarousel();
+    // headerTextBoxAnim();
+
+    carMovement = setInterval(function () {
+      moveCarousel()
+      // headerTextBoxAnim()
+    }, 4000);
+
+  }, 2000);
+}
+
+startCar();
 
 
 // header text anim
@@ -110,15 +123,15 @@ var carTimeOut;
 
 
 // car stop/start on hover headerTextBox
-// var carCheckSwitch
-// headerTextBox[0].addEventListener('mouseleave',()=>{
-//   startCar();
-// });
-//
-// headerTextBox[0].addEventListener('mouseenter',()=>{
-//   clearTimeout(carTimeOut);
-//   clearInterval(carMovement);
-// });
+var carCheckSwitch
+headerTextBox[0].addEventListener('mouseleave',()=>{
+  startCar();
+});
+
+headerTextBox[0].addEventListener('mouseenter',()=>{
+  clearTimeout(carTimeOut);
+  clearInterval(carMovement);
+});
 
 
 // tailLight anim
@@ -138,10 +151,22 @@ function tailLightFun() {
   }
 }
 
+// doule hover header
+var headerDoubleHover = document.getElementsByClassName('headerDoubleHover');
+
+function recentProjectsFun() {
+  if(headerDoubleHover[0].getClientRects()[0].bottom < window.innerHeight /3){
+    headerDoubleHover[0].style.opacity = '1';
+  }else{
+    headerDoubleHover[0].style.opacity = '0';
+  }
+}
+
 
 
 window.addEventListener('scroll',()=>{
   tailLightFun();
+  recentProjectsFun();
 })
 
 
@@ -157,7 +182,7 @@ for (var i = 0; i < toDomainButtonBox.length; i++) {
 
 
 // more temps
-var mynext = document.getElementsByClassName('mynext');
-mynext[0].addEventListener('click',()=>{
-  moveCarousel()
-})
+// var mynext = document.getElementsByClassName('mynext');
+// mynext[0].addEventListener('click',()=>{
+//   moveCarousel()
+// })
