@@ -146,22 +146,23 @@ body {
 }
 
 .car-header-span {
-    font-family: 'OpenSans-Thin';
-    font-size: 2.83vw;
-    margin-left: 1vw;
-    position: relative;
-    top: 0.25vw;
+  font-family: 'OpenSans-Thin';
+  font-size: 2.83vw;
+  margin-left: 1vw;
+  position: relative;
+  top: 0.25vw;
 }
 
-.card a{
+.card a {
   text-decoration: none;
 }
 
-.card h3:hover{
-transition: 0.5s ease;
-filter: brightness(1);
+.card h3:hover {
+  transition: 0.5s ease;
+  filter: brightness(1);
 }
-.card h3:hover{
+
+.card h3:hover {
   filter: brightness(2.2);
 }
 
@@ -256,7 +257,7 @@ filter: brightness(1);
 
 .modalCarouselContainer {
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   top: 0;
@@ -265,7 +266,7 @@ filter: brightness(1);
 
 .modalCarContainderInside {
   width: 100%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -280,10 +281,10 @@ filter: brightness(1);
   position: relative;
   left: auto;
   top: auto;
-    /* transform: scale(1); */
+  /* transform: scale(1); */
 }
 
-.modalCarImage:hover{
+.modalCarImage:hover {
   /* transform: scale(1.5); */
 }
 
@@ -334,7 +335,7 @@ filter: brightness(1);
   opacity: 0.27;
 }
 
-.popUpCloseBox{
+.popUpCloseBox {
   cursor: pointer;
   width: 7.26744vw;
   height: 7.26744vw;
@@ -347,9 +348,11 @@ filter: brightness(1);
   font-family: inherit;
   color: #3c3c3b;
 }
-.popUpCloseBox:hover p{
+
+.popUpCloseBox:hover p {
   opacity: 0.45;
 }
+
 .popUpCloseBox p {
   transition: 0.5s ease;
   font-size: 6vw;
@@ -359,30 +362,29 @@ filter: brightness(1);
   user-select: none;
 }
 
-
 .modalNav {
-    position: absolute;
-    height: 2vw;
-    background: rgba(0,0,0,0.9);
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw 0;
-    box-sizing: content-box;
+  position: absolute;
+  height: 2vw;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1vw 0;
+  box-sizing: content-box;
 }
 
-.zoomin{
+.zoomin {
   height: 2vw;
   margin-right: 2vw;
   cursor: pointer;
 }
-.zoomout{
+
+.zoomout {
   height: 2vw;
   cursor: pointer;
 }
-
 
 /* modal end */

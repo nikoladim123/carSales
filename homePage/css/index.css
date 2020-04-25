@@ -1,4 +1,4 @@
-nav{
+nav {
   transition: 0.5s ease;
   position: relative;
   width: 100%;
@@ -7,11 +7,11 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0vw -0.9vw 6.1vw rgba(0,0,0,0.5);
+  box-shadow: 0vw -0.9vw 6.1vw rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
-.logo{
+.logo {
   position: absolute;
   /* height: 8.276863vw; */
   right: 2.805vw;
@@ -19,7 +19,7 @@ nav{
   width: 9.513262vw;
 }
 
-nav form{
+nav form {
   position: relative;
   display: flex;
   width: 39.5742vw;
@@ -28,7 +28,7 @@ nav form{
   border-radius: 20vw;
 }
 
-nav form input{
+nav form input {
   width: 60%;
   border-radius: 20vw;
   font-size: 0.96758vw;
@@ -36,7 +36,7 @@ nav form input{
   padding-left: 5%;
 }
 
-.searchDropDownContainer{
+.searchDropDownContainer {
   position: absolute;
   width: 13.30430vw;
   height: 100%;
@@ -48,7 +48,7 @@ nav form input{
   border-radius: 10vw;
 }
 
-nav form button{
+nav form button {
   cursor: pointer;
   height: 3.43492vw;
   width: 3.43492vw;
@@ -63,16 +63,15 @@ nav form button{
   justify-content: center;
 }
 
-nav form button:hover{
-transition: 0.5s;
+nav form button:hover {
+  transition: 0.5s;
   filter: brightness(1.2);
 }
 
-nav form button img{
+nav form button img {
   width: 1.59651vw;
   height: 1.59651vw;
 }
-
 
 header {
   height: 67.76379vw;
@@ -198,85 +197,132 @@ nav {
   }
 }
 
-.mashinAnchor {
-  position: absolute;
-  text-decoration: none;
-  margin-top: 1vw;
-  /* display: block; */
-  margin-right: 1vw;
-  font-family: 'Morganite-Bold';
-  font-size: 10vw;
-  color: rgba(255, 255, 255, 0.5);
-  margin-left: 6vw;
-  letter-spacing: 0.5vw;
-  z-index: 1;
-  transition: 0.5s ease;
-  left: 0vw;
-}
-
-.mashinAnchor:hover{
-  color: rgba(255, 255, 255, 1);
-  text-decoration: none;
-}
-
-.mashin-web {
-  width: 43.638vw;
-  margin-top: 3vw;
-  margin-left: 3vw;
-}
-
 .headerTextBox {
-  width: 28.0599vw;
-  border-top: 0.82244vw solid white;
+  left: 2.80871vw;
+  top: 10.23486vw;
   position: absolute;
-  right: 2vw;
-  top: 12vw;
-  transition: 1s;
-  transform: skewX(0deg);
-  border-radius: 1vw;
-  cursor: pointer;
+  width: 40.40435vw;
+  height: 31.525423vw;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.968523vw;
+  border: 1px solid #929188;
 }
 
-.whiteRevealAnim {
+.headerTextBoxInside {
+  position: relative;
+  border: 1px solid #929188;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: white;
+  height: 100%;
 }
 
-.headerTextBox p {
-  color: white;
-  font-size: 1.45416vw;
+.headerTextBoxInside h2 {
+  font-size: 15.4963vw;
+  font-family: 'Morganite-bold';
+  margin: 0;
+  margin-top: -2vw;
+  margin-left: 2.65vw;
 }
 
-/* .whiteLineThick{
+.headerTextBoxInside h3 {
+  position: relative;
+  font-size: 1.452784vw;
+  font-family: 'OpenSans-Regular';
+  margin: 0;
+  margin-top: -3.3vw;
+  margin-left: 12vw;
+}
 
-} */
-.getStartedContainer {
-  width: 13.15916vw;
-  float: right;
-  border-top: 1px solid white;
-  padding-top: 2vw;
+.headerButonBox {
+  margin-top: 2.6vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
-.getStartedButton {
-  width: 10.3047vw;
-  height: 2.5641vw;
-  border-radius: 10vw;
-  background: #f8a113;
-  border: 1px solid white;
-  box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.32);
-  color: white;
-  font-size: 1.4416vw;
+.headerButonBox button {
+  position: relative;
+  border: 2px solid #ff732e;
+  color: rgba(255, 115, 46, 0.6);
+  font-size: 1.452784vw;
+  border-radius: 1vw;
+  display: block;
+  width: 17.43341vw;
+  height: 2.90556vw;
+  background: rgba(255, 255, 255, 0);
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
-.getStartedButton:hover {
+.headerButonBox button:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.headerButonBox button:nth-child(2) {
+  width: 14.2857vw;
+  margin-top: 0.972639vw;
+}
+
+.banerSideMenuContainer {
+  position: absolute;
+  right: 0;
+  top: 11.67070vw;
+  /* border: 1px solid; */
+  width: 15vw;
+  overflow: hidden;
+}
+
+.sideMenuItem {
+  position: relative;
+  right: -10.8vw;
+  width: 15vw;
+  height: 4.26150vw;
+  border-top-left-radius: 0vw;
+  border-bottom-left-radius: 0vw;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 0.67s ease;
   cursor: pointer;
-  box-shadow: 0px 0px 3vw rgba(255, 255, 255, 0.62);
+  display: flex;
+  align-items: center;
+}
+.sideMenuItem:hover{
+  border-top-left-radius: 10vw;
+  border-bottom-left-radius: 10vw;
+}
+.sideMenuItem p{
+  margin: 0;
+  font-size: 1.368523vw;
+  font-family: 'OpenSans-Bold';
+}
+
+.sideMenuItem img{transition: 0.75s ease;transform: scale(0.7);width: 3vw;margin-left: 0.6vw;position: relative;margin-right: 1vw;}
+.sideMenuItem:hover img{
+  transform: scale(0.9);
+  /* left: 0.6vw; */
+  /* position: relative; */
+}
+
+.sideMenuItem:hover {
+  right: 0;
+}
+
+.specialItemSelection {
+  position: relative;
+  width: 3.6vw;
+  margin-right: 1vw;
+  height: 100%;
+}
+
+.specialItemSelection img {
+  position: absolute;
+  width: 3vw;
+  top: 0.85vw;
+}
+.specialItemSelection img:nth-child(1){
+  opacity: 0;
+}
+.sideMenuItem:nth-child(1):hover img{
+  opacity: 1;
 }
 
 .headerCarouselContainer {
@@ -304,14 +350,14 @@ nav {
   position: relative;
 }
 
-.banerCarBG{
+.banerCarBG {
   position: absolute;
   width: 100%;
   height: 100%;
   /* background: rgba(0,0,0,0.7); */
 }
 
-.banerBGimg{
+.banerBGimg {
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -353,12 +399,12 @@ nav {
   /* max-height: 100%; */
   /* max-width: 100%; */
   height: 62.2760vw;
-  left: -3vw;
+  left: 11vw;
   top: -2vw;
   /* border:2px solid red; */
 }
 
-.headerDoubleHover{
+.headerDoubleHover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -367,7 +413,9 @@ nav {
   left: 0;
   opacity: 0;
   transition: 1s ease;
+  pointer-events: none;
 }
+
 /* header end */
 /* sectionClosestToYou start*/
 .sectionClosestToYou {
@@ -419,11 +467,20 @@ nav {
 .sectionToDomainName {
   position: relative;
   margin-bottom: -0.5vw;
+  width: 100%;
+  overflow: hidden;
 }
 
 .sectionToDomainNameBG {
   width: 100%;
   position: relative;
+}
+.sectionToDomainNameCar{
+  position: absolute;
+  top: 25vw;
+  right: -4vw;
+  transition: 1s ease;
+  width: 65.2300vw;
 }
 
 .domainNameContentContainer {
@@ -499,9 +556,9 @@ nav {
   border-radius: 50%;
   border: 0.14527845vw solid white;
   box-sizing: border-box;
-  display:flex;
-  align-items:center;
-  justify-content:center
+  display: flex;
+  align-items: center;
+  justify-content: center
 }
 
 .toDomainButtonInside {
@@ -511,25 +568,25 @@ nav {
   border: 0.14527845vw solid gray;
   position: relative;
   box-sizing: border-box;
-  transition:0.75s ease;
+  transition: 0.75s ease;
 }
 
-.toDomainButtonBox:hover .toDomainButtonInside{
-  cursor:pointer;
-  background:white;
-  border:0px solid gray;
-  box-shadow: inset 0px 0px 1.4vw 1.4vw rgba(255,0,0,0.75);
+.toDomainButtonBox:hover .toDomainButtonInside {
+  cursor: pointer;
+  background: white;
+  border: 0px solid gray;
+  box-shadow: inset 0px 0px 1.4vw 1.4vw rgba(255, 0, 0, 0.75);
 }
 
-.toDomainButtonBox p{
-  transition:1s ease;
-  user-select:none;
+.toDomainButtonBox p {
+  transition: 1s ease;
+  user-select: none;
   cursor: pointer;
 }
 
-.toDomainButtonBox:hover p{
-  color:red;
-  transition:1s ease;
+.toDomainButtonBox:hover p {
+  color: red;
+  transition: 1s ease;
 }
 
 .toDomainButtonBox p {
@@ -567,7 +624,7 @@ nav {
   border-bottom: 0.968523vw solid black;
 }
 
-.onDomainCar{
+.onDomainCar {
   position: relative;
   width: 55.10895vw;
   top: 6vw;
@@ -617,23 +674,24 @@ nav {
 }
 
 .onDomainButtonsContainer {
-    /* border: 1px solid red; */
-    margin-top: 15.5vw;
-    position: relative;
-    padding-left: 36vw;
+  /* border: 1px solid red; */
+  margin-top: 15.5vw;
+  position: relative;
+  padding-left: 36vw;
 }
-/* SectionOnDomain end */
 
+/* SectionOnDomain end */
 /* sectionTrustedDealers start */
-.sectionTrustedDealers{
+.sectionTrustedDealers {
   position: relative;
 }
-.trustedDealersBG{
+
+.trustedDealersBG {
   position: relative;
   width: 100%;
 }
 
-.trustedDealersContent{
+.trustedDealersContent {
   position: absolute;
   bottom: 6vw;
   left: 0;
@@ -643,7 +701,7 @@ nav {
   align-items: center;
 }
 
-.trustedDealersContent h3{
+.trustedDealersContent h3 {
   font-family: 'OpenSans-Regular';
   font-size: 1.16222vw;
   margin: 0;
@@ -651,7 +709,7 @@ nav {
   right: 7.6vw;
 }
 
-.trustedDealersContent h2{
+.trustedDealersContent h2 {
   font-family: 'Morganite-bold';
   font-size: 5.81113vw;
   margin: 0;
@@ -659,12 +717,12 @@ nav {
   line-height: 0.8;
 }
 
-.trustedDealersContent h2 span{
+.trustedDealersContent h2 span {
   font-family: 'Morganite-Light';
   font-weight: 100;
 }
 
-.trustedDealersContent p{
+.trustedDealersContent p {
   font-family: 'OpenSans-Regular';
   font-size: 1.45278vw;
   width: 59vw;
@@ -672,19 +730,17 @@ nav {
 }
 
 /* sectionTrustedDealersBG end */
-
-
 /* test */
 .carousel {
-    position: relative;
-    padding-top: 3.24455vw;
-    padding-bottom: 3.140435vw;
-    background: #c8c7cc;
-    border-bottom: 11vw solid #c8c7cc;
-    overflow: hidden;
+  position: relative;
+  padding-top: 3.24455vw;
+  padding-bottom: 3.140435vw;
+  background: #c8c7cc;
+  border-bottom: 11vw solid #c8c7cc;
+  overflow: hidden;
 }
 
-.carousel-inner{
+.carousel-inner {
   overflow: visible;
 }
 
@@ -699,126 +755,102 @@ nav {
   background-image: none;
 }
 
-.carousel-control-next-icon:after
-{
+.carousel-control-next-icon:after {
   content: '>';
   font-size: 4vw;
-  color: rgb(30,30,30);
+  color: rgb(30, 30, 30);
 }
 
 .carousel-control-prev-icon:after {
   content: '<';
   font-size: 4vw;
-  color: rgb(30,30,30);
+  color: rgb(30, 30, 30);
 }
 
 /* sectionBikes start */
-.sectionBikes{
+.sectionBikes {
   position: relative;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-.KTMcontainer{
+.KTMcontainer {
   position: relative;
   height: 48.42615vw;
   background: #ababab;
   border-top: 1vw solid black;
 }
 
-.KTMAnimPic{
+.KTMAnimPic {
   position: absolute;
   left: 1.5vw;
   top: 5vw;
   width: 48.42615vw;
 }
 
-.byciclesContainer{
+.byciclesContainer {
   position: relative;
   border-top: 1vw solid black;
   border-bottom: 2vw solid black;
 }
 
-.bicyclesBG{
+.bicyclesBG {
   width: 100%;
   position: relative;
 }
 
-
 .bicycleNarrowBG {
-    position: absolute;
-    background: rgba(0, 0, 0, 0.78);
-    transform-origin: top right;
-    transform: skewX(-26deg);
-    height: 100%;
-    width: 100%;
-    filter: blur(3px);
-    left: 52vw;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.78);
+  transform-origin: top right;
+  transform: skewX(-26deg);
+  height: 100%;
+  width: 100%;
+  filter: blur(3px);
+  left: 52vw;
 }
+
 .bicycleContainer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 76.0290vw;
-    height: 100%;
-    overflow: hidden;
-    /* border: 1px solid red; */
-    margin-bottom: 19vw;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 76.0290vw;
+  height: 100%;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  margin-bottom: 19vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .bicycleTextBox {
-    position: relative;
-    margin-left: 32.3898vw;
-    width: 39.37288vw;
-    order: 1;
-    margin-top: 7vw;
+  position: relative;
+  margin-left: 32.3898vw;
+  width: 39.37288vw;
+  order: 1;
+  margin-top: 7vw;
 }
 
 .bicycleButtonsContainer {
-    /* border: 1px solid red; */
-    margin-top: 21.5vw;
-    position: relative;
-    padding-left: 40vw;
+  /* border: 1px solid red; */
+  margin-top: 21.5vw;
+  position: relative;
+  padding-left: 40vw;
 }
-/* sectionBikes end */
 
-.sectionMotoBikes{
+/* sectionBikes end */
+.sectionMotoBikes {
   position: relative;
   border-bottom: 0.3vw solid black;
 }
-.motoSection{
+
+.motoSection {
   width: 100%;
   position: relative;
 }
 
-
-
 /* bootstrap edits */
-.carousel-control-prev-icon, .carousel-control-next-icon{
+.carousel-control-prev-icon, .carousel-control-next-icon {
   /* font-family: 'OpenSans-Thin'; */
   font-weight: 100;
-}
-
-
-
-
-/* temp */
-.TEMPMARGIN {
-    position: absolute;
-    top: 40vw;
-    width: 100%;
-    border: 3px solid blue;
-    z-index: 2323;
-}
-
-.mynext{
-  font-size: 3vw;
-  position: absolute;
-  z-index: 23223;
-  top: 10vw;
-  color: blue;
-  cursor: pointer;
-  left: 3vw;
 }

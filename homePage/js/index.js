@@ -19,18 +19,7 @@ function banerBGimgFun(broj) {
   banerBGimg[broj].style.opacity = '1';
 }
 
-// mashinAnchor baner text anim
-var mashinAnchor = document.getElementsByClassName('mashinAnchor');
-function mashinAnchorAnimFun() {
-  mashinAnchor[0].style.left = '-35vw';
-  mashinAnchor[0].style.opacity = '0';
-  setTimeout(function () {
-    mashinAnchor[0].style.left = '0vw';
-    setTimeout(function () {
-    mashinAnchor[0].style.opacity = '1';
-  }, 500);
-  }, 500);
-}
+
 
 // headerCarousel[0].style.left = (carrouselBox.length-1) * -100 + 'vw';
 
@@ -58,7 +47,6 @@ function moveCarousel() {
   }
 
   banerBGimgFun(-(carPosition/100));
-  mashinAnchorAnimFun()
 
   header[0].style.background = colors[-(carPosition/100)];
 
@@ -92,11 +80,9 @@ function startCar() {
   carTimeOut =
   setTimeout(function () {
     moveCarousel();
-    // headerTextBoxAnim();
 
     carMovement = setInterval(function () {
       moveCarousel()
-      // headerTextBoxAnim()
     }, 4000);
 
   }, 2000);
@@ -105,33 +91,6 @@ function startCar() {
 startCar();
 
 
-// header text anim
-// var headerTextBox = document.getElementsByClassName('headerTextBox');
-
-// function headerTextBoxAnim() {
-//   headerTextBox[0].style.transform = 'skewX(30deg)';
-//   headerTextBox[0].style.filter = 'blur(5px)';
-//   headerTextBox[0].style.opacity = '0';
-//   headerTextBox[0].style.right = '-10vw';
-//   setTimeout(function () {
-//     headerTextBox[0].style.transform = 'skewX(0deg)';
-//     headerTextBox[0].style.filter = 'blur(0px)';
-//     headerTextBox[0].style.opacity = '1';
-//     headerTextBox[0].style.right = '2vw';
-//   }, 1000);
-// }
-
-
-// car stop/start on hover headerTextBox
-var carCheckSwitch
-headerTextBox[0].addEventListener('mouseleave',()=>{
-  startCar();
-});
-
-headerTextBox[0].addEventListener('mouseenter',()=>{
-  clearTimeout(carTimeOut);
-  clearInterval(carMovement);
-});
 
 
 // tailLight anim
@@ -162,11 +121,26 @@ function recentProjectsFun() {
   }
 }
 
+// sideCar animation
+
+var sectionToDomainNameCar = document.getElementsByClassName('sectionToDomainNameCar');
+
+function sectionToDomainNameCarFun() {
+  if(sectionToDomainNameCar[0].getClientRects()[0].top < window.innerHeight /2){
+    sectionToDomainNameCar[0].style.right = '0vw';
+    console.log(1);
+  }else{
+    sectionToDomainNameCar[0].style.right = '-4vw';
+    console.log(2);
+  }
+}
+
 
 
 window.addEventListener('scroll',()=>{
   tailLightFun();
   recentProjectsFun();
+  sectionToDomainNameCarFun();
 })
 
 

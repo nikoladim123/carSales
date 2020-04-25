@@ -73,16 +73,25 @@ var zoomout = document.getElementsByClassName('zoomout');
 
 var zoomLevel = 1;
 
-zoomin[0].addEventListener('click',()=>{
+function zoomInFun() {
   zoomLevel += 0.2;
   modalCarImage[0].style.transform = `scale(${zoomLevel})`;
+}
+
+zoomin[0].addEventListener('click',()=>{
+  zoomInFun()
 })
 
-zoomout[0].addEventListener('click',()=>{
+function zoomOutFun() {
   if(zoomLevel > 1){
     zoomLevel -= 0.2;
   }
   modalCarImage[0].style.transform = `scale(${zoomLevel})`;
+
+}
+
+zoomout[0].addEventListener('click',()=>{
+  zoomOutFun()
 })
 
 
@@ -138,6 +147,21 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
+
+
+// test
+var modalCarContainderInside = document.getElementsByClassName('modalCarContainderInside');
+
+modalCarContainderInside[0].addEventListener('wheel',(e)=>{
+  e.preventDefault();
+  if(e.deltaY < 0){
+    zoomInFun()
+  }else{
+    zoomOutFun()
+  }
+  console.log(e.deltaY);
+})
+
 
 
 // modalCarImage[0].onmousemove = function(e) {
