@@ -90,6 +90,27 @@ function startCar() {
 
 startCar();
 
+function stopCar() {
+  clearInterval(carMovement,carTimeOut)
+}
+
+// hover to stop anim
+var search = document.getElementsByClassName('search');
+
+search[0].addEventListener('mouseenter',()=>{
+  clearTimeout(delayStartCar);
+  stopCar()
+})
+
+var delayStartCar;
+
+search[0].addEventListener('mouseleave',()=>{
+  delayStartCar =
+  setTimeout(function () {
+    startCar()
+  }, 4000);
+})
+
 
 
 

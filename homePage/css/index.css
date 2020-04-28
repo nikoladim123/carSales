@@ -98,7 +98,7 @@ nav {
 }
 
 .search:hover .megaMenu {
-  height: 41.88861vw;
+  height: calc(100vh - 4.837929vw);
 }
 .search:hover .searchTriangle{
   transform: rotate(90deg);
@@ -112,7 +112,8 @@ nav {
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 9.685230vw;
+  height: 7.602905vw;
+  box-shadow: inset 0px 8vw 9vw -5vw rgba(0,0,0,0.1531);
 }
 
 .searchBox {
@@ -167,6 +168,43 @@ nav {
   margin: 0;
   font-size: 1.162vw;
   user-select: none;
+}
+
+.megaMenuContent{
+  padding: 2vw 3vw;
+  display: flex;
+  justify-content: space-between;
+}
+.mmLeftRow{
+  width: 17.0460vw;
+}
+.mmRightRow{
+  width: 17.0460vw;
+}
+.mmAdbox{
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5s ease;
+  box-shadow: 0px 0px 4vw rgba(0,0,0,0);
+  padding: 0.5vw;
+  margin-bottom: 0.75vw;
+}
+
+.mmAdbox:hover{
+  box-shadow: 0px 0px 4vw rgba(0,0,0,0.151);
+}
+.megaMenuContent img{
+  width: 100%;
+}
+.mmCarName{
+  font-size: 1.452784vw;
+  font-family: 'OpenSans-Bold';
+  color: #f56e00;
+  margin: 1vw 0 0.2vw 0;
+  font-weight: 900;
+}
+.mmCarShortDescription{
+
 }
 
 /* megamenu end */
@@ -922,4 +960,14 @@ nav {
 .carousel-control-prev-icon, .carousel-control-next-icon {
   /* font-family: 'OpenSans-Thin'; */
   font-weight: 100;
+}
+
+
+
+/* temp */
+.linee{
+  position: absolute;
+  border: 1px solid red;
+  width: 100%;
+  top: 45vw;
 }
