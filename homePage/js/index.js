@@ -157,12 +157,33 @@ function sectionToDomainNameCarFun() {
 }
 
 
+// mega menu
+var searchHider = document.getElementsByClassName('searchHider');
+var megaMenu = document.getElementsByClassName('megaMenu');
+
+var searchState = true;
+
+searchHider[0].addEventListener('mouseenter',()=>{
+  if(searchState){
+    megaMenu[0].style.height = 'calc(100vh - 4.837929vw)';
+  }else if(!searchState){
+    megaMenu[0].style.height = '0vw';
+  }
+  searchState = !searchState;
+
+})
+
+
+
+
 
 window.addEventListener('scroll',()=>{
   tailLightFun();
   recentProjectsFun();
   sectionToDomainNameCarFun();
 })
+
+
 
 
 
@@ -174,6 +195,8 @@ for (var i = 0; i < toDomainButtonBox.length; i++) {
     location.href = window.location.href.substring(0, window.location.href.length - 19) + 'carAddPopup/carAddPopup.html';
   })
 }
+
+
 
 
 // more temps

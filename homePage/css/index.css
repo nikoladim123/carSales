@@ -31,16 +31,14 @@ nav {
 }
 .login{
   font-size: 1.452784vw;
-  color: #555555;
+  color: white;
   transition:0.5s ease;
   user-select: none;
   font-family: 'OpenSans-Bold';
   font-weight: 800;
   margin: 0;
 }
-.loginContainer:hover .login{
-  color: #777777;
-}
+
 
 .loginContainer:hover .loginImage{
   box-shadow: 0px 0px 2vw rgba(255,255,255,0.5);
@@ -57,6 +55,14 @@ nav {
 .search {
   /* border: 1px solid red; */
   height: 4.837929vw;
+}
+
+.searchHider{
+  height: 4.837929vw;
+  width: 19vw;
+  position: absolute;
+  left: 40vw;
+  /* background:rgba(5,5,5,0.3) */
 }
 
 .searchPar {
@@ -95,12 +101,12 @@ nav {
   overflow: hidden;
   /* height: 41.88861vw; */
   height: 0;
-      overflow-y: scroll;
+  overflow-y: scroll;
 }
 
-.search:hover .megaMenu {
+/* .search:hover .megaMenu {
   height: calc(100vh - 4.837929vw);
-}
+} */
 .search:hover .searchTriangle{
   transform: rotate(90deg);
   top: 0.1vw;
