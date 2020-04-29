@@ -94,25 +94,6 @@ function stopCar() {
   clearInterval(carMovement,carTimeOut)
 }
 
-// hover to stop anim
-var search = document.getElementsByClassName('search');
-
-search[0].addEventListener('mouseenter',()=>{
-  clearTimeout(delayStartCar);
-  stopCar()
-})
-
-var delayStartCar;
-
-search[0].addEventListener('mouseleave',()=>{
-  delayStartCar =
-  setTimeout(function () {
-    startCar()
-  }, 4000);
-})
-
-
-
 
 // tailLight anim
 var tailLight = document.getElementsByClassName('tailLight');
@@ -161,17 +142,41 @@ function sectionToDomainNameCarFun() {
 var searchHider = document.getElementsByClassName('searchHider');
 var megaMenu = document.getElementsByClassName('megaMenu');
 
+var delayStartCar;
 var searchState = true;
 
 searchHider[0].addEventListener('mouseenter',()=>{
   if(searchState){
+    clearTimeout(delayStartCar);
+    stopCar()
     megaMenu[0].style.height = 'calc(100vh - 4.837929vw)';
   }else if(!searchState){
     megaMenu[0].style.height = '0vw';
+    delayStartCar =
+    setTimeout(function () {
+      startCar()
+    }, 4000);
   }
   searchState = !searchState;
 
 })
+
+// hover to stop anim
+// var search = document.getElementsByClassName('search');
+//
+// megaMenu[0].addEventListener('mouseenter',()=>{
+//   clearTimeout(delayStartCar);
+//   stopCar()
+// })
+//
+// var delayStartCar;
+//
+// megaMenu[0].addEventListener('mouseleave',()=>{
+//   delayStartCar =
+//   setTimeout(function () {
+//     startCar()
+//   }, 4000);
+// })
 
 
 
