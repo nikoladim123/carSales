@@ -113,6 +113,7 @@ nav {
   justify-content: center;
   position: relative;
   height: 7.602905vw;
+  flex-direction: column;
   box-shadow: inset 0px 8vw 9vw -5vw rgba(0,0,0,0.1531);
 }
 
@@ -132,6 +133,28 @@ nav {
   font-size: 1.452784vw;
   color: #555555;
   font-family: 'Morganite-Bold';
+}
+
+.megamenuHeadings{
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 93%;
+  height: 1vw;
+  padding: 3.5%;
+  position: absolute;
+  bottom: 0;
+  box-sizing: content-box;
+}
+
+.megamenuHeadings h3{
+
+margin: 0;
+
+position: relative;
+
+top: 2vw;
 }
 
 .searchResultContainer {
@@ -188,6 +211,30 @@ nav {
   box-shadow: 0px 0px 4vw rgba(0,0,0,0);
   padding: 0.5vw;
   margin-bottom: 0.75vw;
+}
+
+.addBoxImageBox{
+  position: relative;
+  overflow: hidden;
+}
+
+.addBoxImageBox::before{
+  content: '';
+  display: block;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  position: absolute;
+  width: 20%;
+  height: 220%;
+  top: 1px;
+  bottom: 1px;
+  top:-120%;
+  left: 10%;
+  transition: 2s;
+  transform: rotate(45deg);
+}
+.addBoxImageBox:hover:before,.addBoxImageBox:hover:before{
+  top:100%;
+  left:100%;
 }
 
 .mmAdbox:hover{
