@@ -95,6 +95,7 @@ nav {
   overflow: hidden;
   /* height: 41.88861vw; */
   height: 0;
+      overflow-y: scroll;
 }
 
 .search:hover .megaMenu {
@@ -136,7 +137,7 @@ nav {
 }
 
 .megamenuHeadings{
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -203,6 +204,7 @@ top: 2vw;
 }
 .mmRightRow{
   width: 17.0460vw;
+  text-align: center;
 }
 .mmAdbox{
   width: 100%;
@@ -252,6 +254,28 @@ top: 2vw;
 }
 .mmCarShortDescription{
 
+}
+
+.mmAdkilometers{
+  font-family: 'OpenSans-Bold';
+  font-size: 1.16222vw;
+  color: #555555;
+  margin: 0;
+  margin-top: 1vw;
+  font-weight: 900;
+}
+.mmAdState{
+  font-family: 'OpenSans-Regular';
+  font-size: 1.16222vw;
+  color: #555555;
+  margin: 0;
+}
+.mmAdPrice{
+  font-family: 'OpenSans-Bold';
+  font-size: 1.16222vw;
+  color: #f56e00;
+  margin: 0;
+  font-weight: 900;
 }
 
 /* megamenu end */
@@ -1012,9 +1036,9 @@ nav {
 
 
 /* temp */
-.linee{
+/* .linee{
   position: absolute;
   border: 1px solid red;
   width: 100%;
   top: 45vw;
-}
+} */
