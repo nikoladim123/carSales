@@ -11,7 +11,7 @@ nav {
   z-index: 2;
 }
 
-.loginContainer {
+.loginContainer{
   /* border: 1px solid red; */
   position: absolute;
   height: 100%;
@@ -21,27 +21,27 @@ nav {
   cursor: pointer;
 }
 
-.loginImage {
+.loginImage{
   width: 2.8087167vw;
   height: 2.8087167vw;
   margin-right: 1.3559vw;
   border-radius: 50%;
-  box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0);
+  box-shadow: 0px 0px 2vw rgba(255,255,255,0);
   transition: 0.5s ease;
 }
-
-.login {
+.login{
   font-size: 1.452784vw;
   color: white;
-  transition: 0.5s ease;
+  transition:0.5s ease;
   user-select: none;
   font-family: 'OpenSans-Bold';
   font-weight: 800;
   margin: 0;
 }
 
-.loginContainer:hover .loginImage {
-  box-shadow: 0px 0px 2vw rgba(255, 255, 255, 0.5);
+
+.loginContainer:hover .loginImage{
+  box-shadow: 0px 0px 2vw rgba(255,255,255,0.5);
 }
 
 .logo {
@@ -57,7 +57,7 @@ nav {
   height: 4.837929vw;
 }
 
-.searchHider {
+.searchHider{
   height: 4.837929vw;
   width: 19vw;
   position: absolute;
@@ -107,7 +107,7 @@ nav {
 /* .search:hover .megaMenu {
   height: calc(100vh - 4.837929vw);
 } */
-.search:hover .searchTriangle {
+.search:hover .searchTriangle{
   transform: rotate(90deg);
   top: 0.1vw;
   left: -1.5vw;
@@ -121,11 +121,11 @@ nav {
   position: relative;
   height: 7.602905vw;
   flex-direction: column;
-  box-shadow: inset 0px 8vw 9vw -5vw rgba(0, 0, 0, 0.1531);
+  box-shadow: inset 0px 8vw 9vw -5vw rgba(0,0,0,0.1531);
 }
 
 .searchBox {
-  width: 35.30266vw;
+  width: 38.30266vw;
   height: 2.8087vw;
   position: relative;
 }
@@ -142,7 +142,7 @@ nav {
   font-family: 'Morganite-Bold';
 }
 
-.megamenuHeadings {
+.megamenuHeadings{
   /* border: 1px solid red; */
   display: flex;
   align-items: center;
@@ -153,19 +153,23 @@ nav {
   position: absolute;
   bottom: 0;
   box-sizing: content-box;
+  pointer-events: none;
 }
 
-.megamenuHeadings h3 {
-  margin: 0;
-  position: relative;
-  top: 2vw;
+.megamenuHeadings h3{
+
+margin: 0;
+
+position: relative;
+
+top: 2vw;
 }
 
 .searchResultContainer {
   position: absolute;
   top: 2.80vw;
   background: white;
-  width: 32.30266vw;
+  width: 35.30266vw;
   margin-left: 1vw;
   max-height: 33.41404vw;
   box-shadow: 0vw -0vw 5.1vw rgba(0, 0, 0, 0.1);
@@ -197,74 +201,69 @@ nav {
   user-select: none;
 }
 
-.megaMenuContent {
+.megaMenuContent{
   padding: 2vw 3vw;
   display: flex;
   justify-content: space-between;
 }
-
-.mmLeftRow {
+.mmLeftRow{
   width: 17.0460vw;
 }
-
-.mmRightRow {
+.mmRightRow{
   width: 17.0460vw;
   text-align: center;
 }
-
-.mmAdbox {
+.mmAdbox{
   width: 100%;
   cursor: pointer;
   transition: 0.5s ease;
-  box-shadow: 0px 0px 4vw rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 4vw rgba(0,0,0,0);
   padding: 0.5vw;
   margin-bottom: 0.75vw;
 }
 
-.addBoxImageBox {
+.addBoxImageBox{
   position: relative;
   overflow: hidden;
 }
 
-.addBoxImageBox::before {
+.addBoxImageBox::before{
   content: '';
   display: block;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
   position: absolute;
   width: 20%;
   height: 220%;
   top: 1px;
   bottom: 1px;
-  top: -120%;
+  top:-120%;
   left: 10%;
   transition: 2s;
   transform: rotate(45deg);
 }
-
-.addBoxImageBox:hover:before, .addBoxImageBox:hover:before {
-  top: 100%;
-  left: 100%;
+.addBoxImageBox:hover:before,.addBoxImageBox:hover:before{
+  top:100%;
+  left:100%;
 }
 
-.mmAdbox:hover {
-  box-shadow: 0px 0px 4vw rgba(0, 0, 0, 0.151);
+.mmAdbox:hover{
+  box-shadow: 0px 0px 4vw rgba(0,0,0,0.151);
 }
-
-.megaMenuContent img {
+.megaMenuContent img{
   width: 100%;
 }
-
-.mmCarName {
+.mmCarName{
   font-size: 1.452784vw;
   font-family: 'OpenSans-Bold';
   color: #f56e00;
   margin: 1vw 0 0.2vw 0;
   font-weight: 900;
 }
+.mmCarShortDescription{
 
-.mmCarShortDescription {}
+}
 
-.mmAdkilometers {
+.mmAdkilometers{
   font-family: 'OpenSans-Bold';
   font-size: 1.16222vw;
   color: #555555;
@@ -272,15 +271,13 @@ nav {
   margin-top: 1vw;
   font-weight: 900;
 }
-
-.mmAdState {
+.mmAdState{
   font-family: 'OpenSans-Regular';
   font-size: 1.16222vw;
   color: #555555;
   margin: 0;
 }
-
-.mmAdPrice {
+.mmAdPrice{
   font-family: 'OpenSans-Bold';
   font-size: 1.16222vw;
   color: #f56e00;
@@ -1042,6 +1039,8 @@ nav {
   /* font-family: 'OpenSans-Thin'; */
   font-weight: 100;
 }
+
+
 
 /* temp */
 /* .linee{
