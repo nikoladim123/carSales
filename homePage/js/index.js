@@ -158,7 +158,7 @@ searchHider[0].addEventListener('mouseenter',()=>{
     }, 4000);
   }
   searchState = !searchState;
-
+  // console.log(23);
 })
 
 // hover to stop anim
