@@ -270,11 +270,12 @@ nav {
   top: 2vw;
 }
 
+
 .searchResultContainer {
   position: absolute;
   top: 2.80vw;
   background: white;
-  width: 32.30266vw;
+  width: 36.830266vw;
   margin-left: 1vw;
   max-height: 33.41404vw;
   box-shadow: 0vw -0vw 5.1vw rgba(0, 0, 0, 0.1);
