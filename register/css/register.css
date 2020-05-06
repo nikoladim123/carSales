@@ -139,6 +139,70 @@ header {
   z-index: 1;
 }
 
+/* REGISTRATION ZERO START */
+
+.companyRegForm{
+  /* border: 1px solid red; */
+  width: 27.5544vw;
+  margin-left: 1.84019vw;
+}
+.companyRegForm input{
+  background: white;
+  font-family: 'OpenSans-Regular';
+  font-size: 1.162227vw;
+  border: 1px solid #d5d5e0;
+  height: 2.760290vw;
+  border-radius: 1vw;
+  padding-left: 1.3vw;
+}
+.companyRegForm input::placeholder{
+  color: #999999;
+}
+.companyNameInput{
+  width: 100%;
+  margin-bottom: 2.324455vw;
+}
+.companyRegForm p{
+  font-size: 1.01622vw;
+  margin: 0;
+  margin-bottom: 0.21vw;
+  margin-left: 1.8886198vw;
+}
+.companyLocationContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.905569vw;
+}
+.companyLocationContainer input{
+  width: 12.35617vw;
+}
+.companyPositionInput{
+  width: 80%;
+  margin-bottom: 0.871670vw;
+}
+
+.companyRegForm button{
+  display: block;
+  width: 10.3147vw;
+  height: 2.663438vw;
+  border-radius: 10vw;
+  font-size: 1.45278vw;
+  font-family: 'OpenSans-Bold';
+  font-weight: 900;
+  border: none;
+  background: #ee7000;
+  transition: 0.4s;
+  filter: brightness(1);
+  color: white;
+  margin-top: 2.953995vw;
+  margin-left: 3.631961vw;
+}
+.companyRegForm button:hover{
+  cursor: pointer;
+  filter: brightness(1.15);
+}
+/* REGISTRATION ZERO END */
+
 /* REGISTER ONE START */
 .registerMethodContainer {
   display: flex;
@@ -206,17 +270,15 @@ header {
 /* REGISTER TWO START */
 .registerForm {
   position: relative;
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  padding: 0 9.375vw;
+  padding: 0 4.375vw;
   margin-top: 4.5vw;
 }
 
 .inputTextBox {
   position: relative;
   height: 5.125vw;
-  width: 100%;
+  width: 36.8523vw;
   margin-bottom: 2.1875vw;
 }
 
@@ -231,16 +293,19 @@ header {
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.35);
   width: 100%;
-  padding-left: 11%;
+  padding-left: 16%;
   font-size: 1.375vw;
 }
 
 .checkBoxContainer {
   display: flex;
+  position: relative;
+  left: 5vw;
+  display: none;
 }
 
 .inputCheckBox {
-  transform: scale(3.5);
+  transform: scale(2.5);
   position: relative;
   top: 2.96vw;
   left: -2vw;
@@ -252,12 +317,21 @@ header {
 }
 
 .registerForm button {
-  font-size: 3.625vw;
-  background: #fcad04;
+  font-size: 2.625vw;
+  background: #ee7000;
   border-radius: 20vw;
-  border: 1px solid white;
-  width: 39.3125vw;
-  height: 5.75vw;
+  width: 14.72154vw;
+  border: none;
+  height: 3.7288135vw;
+  color: white;
+  margin-left: 21vw;
+  transition: 0.5s ease;
+  filter: brightness(1);
+}
+
+.registerForm button:hover{
+  cursor: pointer;
+  filter: brightness(1.14);
 }
 
 /* REGISTER TWO END */
@@ -280,6 +354,7 @@ header {
     position: relative;
     margin-bottom: 2vw;
     font-size: 1vw;
+    cursor: pointer;
 }
 
 

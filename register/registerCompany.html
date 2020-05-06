@@ -129,45 +129,96 @@
       <div class="registerContent">
 
         <div class="registerLeftContaier">
+          <div class="selectedItem">
+            <p class="selectedItemParagraph">User Type</p>
+          </div>
           <div class="selectedItem curentlySelectedItem">
-            <p class="selectedItemParagraph">Chosing User Type</p>
+            <p class="selectedItemParagraph">Registration</p>
           </div>
           <div class="selectedItem">
-            <p class="selectedItemParagraph">Registration Method</p>
+            <p class="selectedItemParagraph">Registration </p>
           </div>
           <div class="selectedItem">
-            <p class="selectedItemParagraph">Registration Input</p>
+            <p class="selectedItemParagraph">Registration </p>
           </div>
           <div class="selectedItem">
-            <p class="selectedItemParagraph">Seller sellection</p>
+            <p class="selectedItemParagraph">Registration</p>
           </div>
         </div>
 
         <div class="headerContainer">
 
-          <!-- REGISTRATION STEP 1 -->
+
+          <!-- REGISTRATION STEP 0 -->
           <div class="registrationStageONE regContainer">
-            <h2 class="registerHeading">Please chose your user type</h2>
+            <h2 class="registerHeading">Registration</h2>
             <div class="whoWeAre">
               <p>Please tell us about who you are</p>
             </div>
-            <div class="userTypeSelection">
 
-                <div class="userTypeBox">
-                  <img src="images/mobile/company.jpg" alt="">
-                  <p class="typeDescription">I am a registered company selling or advertising on EUcars.com</p>
-                </div>
-
-                <div class="userTypeBox">
-                  <img src="images/mobile/individual.jpg" alt="">
-                  <p class="typeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-
-            </div>
+            <form class="companyRegForm" class="" action="javascript:void(0)" method="post">
+              <input class="companyNameInput" type="text" name="" value="" placeholder="Company Name">
+              <p>Company Location</p>
+              <div class="companyLocationContainer">
+                <input type="text" name="" value="" placeholder="Country">
+                <input type="text" name="" value="" placeholder="City">
+              </div>
+              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Name">
+              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Position in the Company">
+              <button class="continueFormBut" type="submit" name="button">Continue</button>
+            </form>
           </div>
 
           <!-- REGISTRATION STEP 2 -->
           <div class="registrationStageTWO regContainer">
+            <div class="whoWeAre">
+              <p>Please tell us about who you are</p>
+            </div>
+            <div class="sellerTypeSelection">
+              <!-- <a href="profilePage.html"> -->
+                <div class="SelectTypeBox">
+                  <img src="images/mobile/individual.jpg" alt="">
+                  <p class="sellerTypeDescription">I am a registered company selling or advertising on EUcars.com</p>
+                </div>
+              <!-- </a> -->
+              <!-- <a href="profilePage.html"> -->
+                <div class="SelectTypeBox">
+                  <img src="images/mobile/individual2.jpg" alt="">
+                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
+                </div>
+              <!-- </a> -->
+              <!-- <a href="profilePage.html"> -->
+                <div class="SelectTypeBox">
+                  <img src="images/mobile/individual3.jpg" alt="">
+                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
+                </div>
+              <!-- </a> -->
+              <!-- <a href="profilePage.html"> -->
+                <div class="SelectTypeBox">
+                  <img src="images/mobile/individual4.jpg" alt="">
+                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
+                </div>
+              <!-- </a> -->
+              <!-- <a href="profilePage.html"> -->
+                <div class="SelectTypeBox">
+                  <img src="images/mobile/individual5.jpg" alt="">
+                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
+                </div>
+              <!-- </a> -->
+              <!-- <a href="profilePage.html"> -->
+                <div class="SelectTypeBox">
+                  <img src="images/mobile/individual6.jpg" alt="">
+                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
+                </div>
+              <!-- </a> -->
+            </div>
+          </div>
+
+
+
+
+          <!-- REGISTRATION STEP 3 -->
+          <div class="registrationStageFOUR regContainer">
             <h2 class="registerHeading">Registration Method</h2>
             <h3 class="stepExplanation">Please register using <br> one of the following methods:</h3>
             <div class="registerMethodContainer">
@@ -205,7 +256,8 @@
           </div>
 
 
-          <!-- REGISTRATION STEP 3 -->
+
+          <!-- REGISTRATION STEP 4 -->
           <div class="registrationStageTHREE regContainer">
             <form class="registerForm" action="#" method="post">
               <div class="inputTextBox">
@@ -232,51 +284,7 @@
             </form>
           </div>
 
-          <!-- REGISTRATION STEP 4 -->
 
-          <div class="registrationStageFOUR regContainer">
-            <div class="whoWeAre">
-              <p>Please tell us about who you are</p>
-            </div>
-            <div class="sellerTypeSelection">
-              <a href="profilePage.html">
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual.jpg" alt="">
-                  <p class="sellerTypeDescription">I am a registered company selling or advertising on EUcars.com</p>
-                </div>
-              </a>
-              <a href="profilePage.html">
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual2.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              </a>
-              <a href="profilePage.html">
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual3.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              </a>
-              <a href="profilePage.html">
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual4.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              </a>
-              <a href="profilePage.html">
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual5.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              </a>
-              <a href="profilePage.html">
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual6.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              </a>
-            </div>
-          </div>
 
         </div>
 

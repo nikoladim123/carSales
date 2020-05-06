@@ -17,31 +17,46 @@ function clearSelected() {
   }
 }
 
+// step zero for company
+
+
 
 // step two, userTypeBox
-var userTypeBox = document.getElementsByClassName('userTypeBox');
+var continueFormBut = document.getElementsByClassName('continueFormBut');
 function nextActions(displayBlock) {
   hideAll();
   clearSelected();
-  selectedItem[displayBlock].className = 'selectedItem curentlySelectedItem';
+  selectedItem[displayBlock + 1].className = 'selectedItem curentlySelectedItem';
   regContainer[displayBlock].style.display = 'block';
 }
 
-userTypeBox[0].addEventListener('click',()=>{
-  nextActions(1)
+continueFormBut[0].addEventListener('click',()=>{
+  nextActions(1);
 })
 
-userTypeBox[1].addEventListener('click',()=>{
-  nextActions(1)
-})
+// continueFormBut[1].addEventListener('click',()=>{
+//   nextActions(2)
+// })
+
+// step two, company type
+var SelectTypeBox = document.getElementsByClassName('SelectTypeBox');
+
+for (var i = 0; i < SelectTypeBox.length; i++) {
+  SelectTypeBox[i].addEventListener('click',()=>{
+    nextActions(2)
+  })
+}
 
 
 // step three, method
 var registerMethodBox = document.getElementsByClassName('registerMethodBox');
 
 registerMethodBox[0].addEventListener('click',()=>{
-  nextActions(2)
+  nextActions(3)
 })
+// registerMethodBox[0].addEventListener('click',()=>{
+//   nextActions(2)
+// })
 
 
 // step four
