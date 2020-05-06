@@ -23,6 +23,13 @@
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
 }
 
+*{
+  box-sizing:border-box;
+}
+
+a{
+  text-decoration: none;
+}
 
 body{
   font-family: 'OpenSans-Regular';
@@ -33,7 +40,7 @@ body{
 
 nav{
   transition: 0.5s ease;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 4.837929vw;
   background: transparent;
@@ -109,7 +116,7 @@ nav form button img{
 /* nav test */
 nav {
   transition: 0.5s ease;
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 4.837929vw;
   background: transparent;
@@ -118,6 +125,7 @@ nav {
   align-items: center;
   box-shadow: 0vw -0.9vw 6.1vw rgba(0, 0, 0, 0.5);
   z-index: 2;
+  background: black;
 }
 
 .loginContainer {

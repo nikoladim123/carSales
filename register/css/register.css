@@ -4,8 +4,56 @@ header {
   padding: 0.1px;
 }
 
+.registerContent {
+  display: flex;
+  min-height: calc(100vh - 4.837929vw);
+}
+
+.registerLeftContaier {
+  background: #eaeaea;
+  width: 32%;
+  flex-shrink: 0;
+}
+
+.selectedItem{
+  border: 1px solid transparent;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.1);
+  transition: 0.75s ease;
+}
+.selectedItemParagraph {
+  font-family: 'OpenSans-Bold';
+  font-weight: 800;
+  color: #8f8f96;
+  font-size: 1.743341vw;
+  margin-left: 4.053268vw;
+  transition: 1s ease;
+}
+
+.curentlySelectedItem{
+  box-shadow: 0 0 1vw rgba(0,0,0,0.35);
+}
+
+.curentlySelectedItem .selectedItemParagraph{
+  font-weight: 900;
+  color: black;
+}
+
 .headerContainer {
   position: relative;
+  width: 68%;
+}
+
+.headerContainer h2 {
+  font-size: 1.9743341vw;
+  color: #ee7000;
+  margin-left: 2.813075vw;
+  margin-top: 8.716707vw;
+}
+
+.stepExplanation{
+  font-size: 1.45278vw;
+  margin-left: 5vw;
+  font-weight: 100;
 }
 
 .whoWeAre {
@@ -22,6 +70,7 @@ header {
   margin-top: 46.875vw;
   margin-bottom: 8.4375vw;
   box-shadow: 0px 0px 2vw rgba(0, 0, 0, 0.4);
+  display: none;
 }
 
 .whoWeAre p {
@@ -35,35 +84,71 @@ header {
 .userTypeSelection {
   margin-bottom: 20vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 5.625vw;
 }
 
 .userTypeBox {
-  width: 42.8125vw;
+  cursor: pointer;
+  width: 29.24vw;
+  height: 32.24vw;
+  margin: 0 1.54963vw;
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+  position: relative;
+}
+
+.userTypeBox::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.userTypeBox:hover {
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.35);
+}
+
+.userTypeBox:hover::after {
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .userTypeBox img {
   position: relative;
   width: 100%;
-  height: 42.8125vw;
+  /* height: 42.8125vw; */
 }
 
-.userTypeBox p {
+.userTypeBox:hover .typeDescription{
+  top: -14vw;
+}
+
+.typeDescription{
+  top: 0;
+  position: relative;
   color: white;
   font-family: 'OpenSans-Regular';
-  font-size: 4.375vw;
+  font-size: 1.375vw;
   text-align: center;
+  transition: 0.75s ease;
+  z-index: 1;
 }
 
 /* REGISTER ONE START */
 .registerMethodContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  padding: 0 9.375vw;
+  padding: 0 5vw;
+  padding-right: 26vw;
   box-sizing: border-box;
+  margin-top: 3vw;
 }
 
 .registerMethodContainer a {
@@ -73,8 +158,8 @@ header {
 }
 
 .registerMethodBox {
-  margin-top: 2.1875vw;
-  height: 13.125vw;
+  margin-top: 0.751875vw;
+  height: 4.125vw;
   border-radius: 20vw;
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.35);
@@ -84,30 +169,37 @@ header {
   align-items: center;
   color: black;
   padding-left: 0.2vw;
+  cursor: pointer;
+  transition:0.5s ease;
 }
 
-.selectHtwo{
+.registerMethodBox:hover{
+  background: rgba(110, 100, 255, 1);
+}
+
+.selectHtwo {
   font-size: 5.6vw;
-padding-left: 8vw;
-margin-top: 26vw;
+  padding-left: 8vw;
+  margin-top: 26vw;
 }
 
 .registerMethodBox img {
-  position: relative:;
-  left: 1vw;
-  top: 0.75vw;
-  width: 12vw;
+  left: -0.2vw;
+  top: 0;
+  width: 4vw;
+  position: relative;
 }
 
 .registerMethodBox p {
-  font-size: 4.625vw;
+  font-size: 1.625vw;
   margin: 0;
   margin-left: 1vw;
 }
 
-.logInWIthSocial{
+.logInWIthSocial {
   width: 80%;
-  margin-top: 5.625vw;
+  margin-top: 0.625vw;
+  margin-left: 10%;
 }
 
 /* REGISTER ONE END */
@@ -118,21 +210,19 @@ margin-top: 26vw;
   align-items: center;
   flex-direction: column;
   padding: 0 9.375vw;
-  margin-top: 47.5vw;
+  margin-top: 4.5vw;
 }
 
 .inputTextBox {
   position: relative;
-  height: 13.125vw;
+  height: 5.125vw;
   width: 100%;
   margin-bottom: 2.1875vw;
 }
 
 .inputTextBox img {
   position: absolute;
-  left: 1vw;
-  top: 0.75vw;
-  width: 12vw;
+  width: 5vw;
 }
 
 .inputText {
@@ -140,9 +230,9 @@ margin-top: 26vw;
   border-radius: 20vw;
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.35);
-  width: 80%;
-  padding-left: 20%;
-  font-size: 4.375vw;
+  width: 100%;
+  padding-left: 11%;
+  font-size: 1.375vw;
 }
 
 .checkBoxContainer {
@@ -150,35 +240,106 @@ margin-top: 26vw;
 }
 
 .inputCheckBox {
-  transform: scale(5.5);
+  transform: scale(3.5);
   position: relative;
-  top: 7.5vw;
-  left: -5vw;
+  top: 2.96vw;
+  left: -2vw;
 }
 
 .checkBoxContainer p {
-  font-size: 5vw;
+  font-size: 2vw;
   color: #fcad04;
 }
 
 .registerForm button {
-  font-size: 5.625vw;
+  font-size: 3.625vw;
   background: #fcad04;
   border-radius: 20vw;
   border: 1px solid white;
-  width: 55.3125vw;
-  height: 13.75vw;
+  width: 39.3125vw;
+  height: 5.75vw;
 }
 
 /* REGISTER TWO END */
-
-
 /* REGISTER THREE START */
-.sellerTypeSelection{
+.sellerTypeSelection {
   margin-bottom: 20vw;
   display: flex;
-  justify-content: space-between;
-  padding: 0 5.625vw;
+  justify-content: space-evenly;
+  padding: 0px 0.625vw;
   flex-wrap: wrap;
+  padding-top: 4vw;
 }
+
+.SelectTypeBox {
+    width: 18.24vw;
+    height: 26.24vw;
+    margin: 0px 0.54963vw;
+    box-shadow: 0 0 3vw rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease;
+    position: relative;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+}
+
+
+.SelectTypeBox::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  transition: 0.5s ease;
+}
+
+.SelectTypeBox:hover {
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.35);
+}
+
+.SelectTypeBox:hover::after {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.SelectTypeBox img {
+  position: relative;
+  width: 100%;
+  /* height: 42.8125vw; */
+}
+
+.SelectTypeBox:hover .sellerTypeDescription{
+  top: -14vw;
+}
+
+.sellerTypeDescription{
+  top: 0;
+  position: relative;
+  color: white;
+  font-family: 'OpenSans-Regular';
+  font-size: 1.375vw;
+  text-align: center;
+  transition: 0.75s ease;
+  z-index: 1;
+}
+
 /* REGISTER THREE END */
+
+
+
+/* temps */
+.registrationStageONE {
+  /* display: none; */
+}
+
+.registrationStageTWO {
+  display: none;
+}
+
+.registrationStageTHREE {
+  display: none;
+}
+.registrationStageFOUR {
+  display: none;
+}
