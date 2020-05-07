@@ -4,6 +4,10 @@
     min-height: calc(100vh - 26.837929vw);
     padding: 0.1px;
   }
+  nav{
+    background: #430076;
+    border-bottom: 1px solid white;
+  }
 
   .registerLeftContaier{
     display: none;
@@ -14,7 +18,13 @@
   }
 
   .stepExplanation{
-    display: none;
+    /* display: none; */
+    font-size: 5.625vw;
+    color: white;
+    margin: 0;
+    margin-top: 18vw;
+    margin-left: 11vw;
+
   }
 
   .headerContainer {
@@ -81,7 +91,7 @@
     width: 100%;
     padding: 0 9.375vw;
     box-sizing: border-box;
-    margin-top: 37vw;
+    margin-top: 3vw;
   }
 
   .registerMethodContainer a {
@@ -145,6 +155,8 @@
     height: 13.125vw;
     width: 100%;
     margin-bottom: 2.1875vw;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid white;
   }
 
   .inputTextBox img {
@@ -188,6 +200,8 @@
     width: 55.3125vw;
     height: 13.75vw;
     margin-left: 0;
+    color: #555555;
+    font-weight: 700;
   }
 
   /* REGISTER TWO END */

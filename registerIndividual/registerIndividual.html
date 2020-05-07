@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../globalAssets/css/global.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/registerMobile.css">
-    <link rel="stylesheet" href="../globalAssets/css/global.css">
+    <link rel="stylesheet" href="css/registerIndividual.css">
+    <link rel="stylesheet" href="css/registerIndividualMobile.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer="" media="all">
   </head>
   <body>
@@ -129,21 +128,23 @@
       <div class="registerContent">
 
         <div class="registerLeftContaier">
-          <div class="selectedItem">
-            <p class="selectedItemParagraph">User Type</p>
-          </div>
+          <a href="../registrationLanding/registrationLanding.html">
+            <div class="selectedItem">
+              <p class="selectedItemParagraph">User Type</p>
+            </div>
+          </a>
           <div class="selectedItem curentlySelectedItem">
-            <p class="selectedItemParagraph">Registration</p>
-          </div>
-          <div class="selectedItem">
-            <p class="selectedItemParagraph">Registration </p>
-          </div>
-          <div class="selectedItem">
-            <p class="selectedItemParagraph">Registration </p>
+            <p class="selectedItemParagraph">Registration Method</p>
           </div>
           <div class="selectedItem">
             <p class="selectedItemParagraph">Registration</p>
           </div>
+          <!-- <div class="selectedItem">
+            <p class="selectedItemParagraph">Registration </p>
+          </div>
+          <div class="selectedItem">
+            <p class="selectedItemParagraph">Registration</p>
+          </div> -->
         </div>
 
         <div class="headerContainer">
@@ -151,67 +152,67 @@
 
           <!-- REGISTRATION STEP 0 -->
           <div class="registrationStageONE regContainer">
-            <h2 class="registerHeading">Registration</h2>
-            <div class="whoWeAre">
-              <p>Please tell us about who you are</p>
-            </div>
+            <h2 class="registerHeading">Registration Method</h2>
+            <h3 class="stepExplanation">Please register using <br> one of the following methods:</h3>
+            <div class="registerMethodContainer">
+              <!-- <a href="registerStepTwo.html"> -->
+                <div class="registerMethodBox">
+                  <img src="images/mobile/email.png" alt="">
+                  <p>Register via Email adress</p>
+                </div>
+              <!-- </a> -->
 
-            <form class="companyRegForm" class="" action="javascript:void(0)" method="post">
-              <input class="companyNameInput" type="text" name="" value="" placeholder="Company Name">
-              <p>Company Location</p>
-              <div class="companyLocationContainer">
-                <input type="text" name="" value="" placeholder="Country">
-                <input type="text" name="" value="" placeholder="City">
+              <div class="logInWIthSocial">
+                <!-- <a href="#"> -->
+                  <div class="registerMethodBox">
+                    <img src="images/mobile/facebook.png" alt="">
+                    <p>Register via Facebook</p>
+                  </div>
+                <!-- </a> -->
+
+                <!-- <a href="#"> -->
+                  <div class="registerMethodBox">
+                    <img src="images/mobile/twitter.png" alt="">
+                    <p>Register via Twitter</p>
+                  </div>
+                <!-- </a> -->
+
+                <!-- <a href="#"> -->
+                  <div class="registerMethodBox">
+                    <img src="images/mobile/google.png" alt="">
+                    <p>Register via Google</p>
+                  </div>
+                <!-- </a> -->
               </div>
-              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Name">
-              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Position in the Company">
-              <button class="continueFormBut" type="submit" name="button">Continue</button>
-            </form>
+
+            </div>
           </div>
 
           <!-- REGISTRATION STEP 2 -->
-          <div class="registrationStageTWO regContainer">
-            <div class="whoWeAre">
-              <p>Please tell us about who you are</p>
-            </div>
-            <div class="sellerTypeSelection">
-              <!-- <a href="profilePage.html"> -->
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual.jpg" alt="">
-                  <p class="sellerTypeDescription">I am a registered company selling or advertising on EUcars.com</p>
-                </div>
-              <!-- </a> -->
-              <!-- <a href="profilePage.html"> -->
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual2.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              <!-- </a> -->
-              <!-- <a href="profilePage.html"> -->
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual3.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              <!-- </a> -->
-              <!-- <a href="profilePage.html"> -->
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual4.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              <!-- </a> -->
-              <!-- <a href="profilePage.html"> -->
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual5.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              <!-- </a> -->
-              <!-- <a href="profilePage.html"> -->
-                <div class="SelectTypeBox">
-                  <img src="images/mobile/individual6.jpg" alt="">
-                  <p class="sellerTypeDescription">I am individual selling or buying on EUcars.com</p>
-                </div>
-              <!-- </a> -->
-            </div>
+          <div class="registrationStageTHREE regContainer">
+            <form class="registerForm" action="#" method="post">
+              <div class="inputTextBox">
+                <img src="images/mobile/fullName.png" alt="">
+                <input class="inputText" type="text" name="" value="" placeholder="Full Name">
+              </div>
+              <div class="inputTextBox">
+                <img src="images/mobile/email.png" alt="">
+                <input class="inputText" type="text" name="" value="" placeholder="Email">
+              </div>
+              <div class="inputTextBox">
+                <img src="images/mobile/password.png" alt="">
+                <input class="inputText" type="text" name="" value="" placeholder="Password">
+              </div>
+              <div class="inputTextBox">
+                <img src="images/mobile/password.png" alt="">
+                <input class="inputText" type="text" name="" value="" placeholder="Repeate Password">
+              </div>
+              <div class="checkBoxContainer">
+                <input class="inputCheckBox" type="checkbox" name="" value="">
+                <p>I accept Terms Of Use</p>
+              </div>
+              <button class="submitRegister" type="button" name="button">Register</button>
+            </form>
           </div>
 
 
@@ -292,6 +293,6 @@
     </header>
 
     <script src="../globalAssets/js/megaMenu.js" charset="utf-8"></script>
-    <script src="js/registerCompany.js" charset="utf-8"></script>
+    <script src="js/registerIndividual.js" charset="utf-8"></script>
   </body>
 </html>

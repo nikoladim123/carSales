@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../globalAssets/css/global.css">
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/registerMobile.css">
+    <link rel="stylesheet" href="css/registerCompany.css">
+    <link rel="stylesheet" href="css/registerCompanyMobile.css">
     <link rel="stylesheet" href="../globalAssets/css/global.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" onload="if(media!='all')media='all'" defer="" media="all">
   </head>
@@ -129,17 +129,19 @@
       <div class="registerContent">
 
         <div class="registerLeftContaier">
-          <div class="selectedItem">
-            <p class="selectedItemParagraph">User Type</p>
-          </div>
+          <a href="../registrationLanding/registrationLanding.html">
+            <div class="selectedItem">
+              <p class="selectedItemParagraph">User Type</p>
+            </div>
+          </a>
           <div class="selectedItem curentlySelectedItem">
-            <p class="selectedItemParagraph">Registration</p>
+            <p class="selectedItemParagraph">Main branch</p>
           </div>
           <div class="selectedItem">
-            <p class="selectedItemParagraph">Registration </p>
+            <p class="selectedItemParagraph">Company Registration </p>
           </div>
           <div class="selectedItem">
-            <p class="selectedItemParagraph">Registration </p>
+            <p class="selectedItemParagraph">Registration Method </p>
           </div>
           <div class="selectedItem">
             <p class="selectedItemParagraph">Registration</p>
@@ -150,26 +152,6 @@
 
 
           <!-- REGISTRATION STEP 0 -->
-          <div class="registrationStageONE regContainer">
-            <h2 class="registerHeading">Registration</h2>
-            <div class="whoWeAre">
-              <p>Please tell us about who you are</p>
-            </div>
-
-            <form class="companyRegForm" class="" action="javascript:void(0)" method="post">
-              <input class="companyNameInput" type="text" name="" value="" placeholder="Company Name">
-              <p>Company Location</p>
-              <div class="companyLocationContainer">
-                <input type="text" name="" value="" placeholder="Country">
-                <input type="text" name="" value="" placeholder="City">
-              </div>
-              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Name">
-              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Position in the Company">
-              <button class="continueFormBut" type="submit" name="button">Continue</button>
-            </form>
-          </div>
-
-          <!-- REGISTRATION STEP 2 -->
           <div class="registrationStageTWO regContainer">
             <div class="whoWeAre">
               <p>Please tell us about who you are</p>
@@ -177,7 +159,7 @@
             <div class="sellerTypeSelection">
               <!-- <a href="profilePage.html"> -->
                 <div class="SelectTypeBox">
-                  <img src="images/mobile/individual.jpg" alt="">
+                  <img src="images/mobile/autoDealer.jpg" alt="">
                   <p class="sellerTypeDescription">I am a registered company selling or advertising on EUcars.com</p>
                 </div>
               <!-- </a> -->
@@ -212,6 +194,28 @@
                 </div>
               <!-- </a> -->
             </div>
+          </div>
+
+
+
+          <!-- REGISTRATION STEP 2 -->
+          <div class="registrationStageONE regContainer">
+            <h2 class="registerHeading">Registration</h2>
+            <div class="whoWeAre">
+              <p>Please tell us about who you are</p>
+            </div>
+
+            <form class="companyRegForm" class="" action="javascript:void(0)" method="post">
+              <input class="companyNameInput" type="text" name="" value="" placeholder="Company Name">
+              <p>Company Location</p>
+              <div class="companyLocationContainer">
+                <input type="text" name="" value="" placeholder="Country">
+                <input type="text" name="" value="" placeholder="City">
+              </div>
+              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Name">
+              <input  class="companyPositionInput" type="text" name="" value="" placeholder="Your Position in the Company">
+              <button class="continueFormBut" type="submit" name="button">Continue</button>
+            </form>
           </div>
 
 

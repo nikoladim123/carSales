@@ -73,6 +73,73 @@
     text-align: center;
   }
 
+  /* REGISTRATION ZERO START */
+
+.companyRegForm{
+  /* border: 1px solid red; */
+  width: 90%;
+  margin-left: 5%;
+}
+.companyRegForm input{
+      position: relative;
+      height: 13.125vw;
+      width: 100%;
+      margin-bottom: 2.1875vw;
+      background: rgba(255, 255, 255, 0.35);
+      border: 1px solid white;
+      border-radius: 13vw;
+      padding-left: 8%;
+      font-size: 4.375vw;
+}
+.companyRegForm input::placeholder{
+  color: #777777;
+}
+.companyNameInput{
+  width: 100%;
+  margin-bottom: 2.324455vw;
+}
+.companyRegForm p{
+  font-size: 7.01622vw;
+  margin: 0;
+  margin-bottom: 0.21vw;
+  margin-left: 1.8886198vw;
+  text-align: center;
+  margin-top: 3vw;
+  color: #333333;
+  margin-bottom: 0.71vw;
+}
+.companyLocationContainer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.905569vw;
+  flex-direction: column;
+}
+.companyLocationContainer input{
+  width: 100%;
+}
+.companyPositionInput{
+  width: 80%;
+  margin-bottom: 0.871670vw;
+}
+
+.companyRegForm button{
+    font-size: 5.625vw;
+    background: #fcad04;
+    border-radius: 20vw;
+    border: 1px solid white;
+    width: 55.3125vw;
+    height: 12.75vw;
+    margin-left: 0;
+    color: #555555;
+    font-weight: 700;
+    margin-left:18vw;
+}
+.companyRegForm button:hover{
+  cursor: pointer;
+  filter: brightness(1.15);
+}
+/* REGISTRATION ZERO END */
+
   /* REGISTER ONE START */
   .registerMethodContainer {
     display: flex;
