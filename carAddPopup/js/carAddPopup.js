@@ -26,15 +26,17 @@ modalCarImage[0].addEventListener('load',()=>{
 })
 
 function repositionImg() {
-  if (imgCount < carouselInner[0].children.length -1 && imgCount > 0) {
+  // if (imgCount < carouselInner[0].children.length -1 && imgCount > 0) {
     modalCarImage[0].style.top = 'auto';
     modalCarImage[0].style.left = 'auto';
+    modalCarImage[0].style.transform = `scale(${1})`;
+    zoomLevel = 1;
     console.log(11111);
-  }
+  // }
 }
 
 
-modalArroRightContainer[0].addEventListener('click',()=>{
+function modalRightMoveFun() {
   if(imgCount < carouselInner[0].children.length -1){
     imgCount++;
     modalCarImage[0].style.opacity = '0';
@@ -43,9 +45,14 @@ modalArroRightContainer[0].addEventListener('click',()=>{
     repositionImg()
     modalCarImage[0].src = 'images/desktop/car/' + carouselInner[0].children[imgCount].children[0].src.replace(/^.*[\\\/]/, '');
   }, 500);
+}
+
+modalArroRightContainer[0].addEventListener('click',()=>{
+  modalRightMoveFun()
 });
 
-modalArrowLeftContainer[0].addEventListener('click',()=>{
+
+function modalLeftMoveFun() {
   if(imgCount > 0){
     imgCount--;
     modalCarImage[0].style.opacity = '0';
@@ -54,6 +61,9 @@ modalArrowLeftContainer[0].addEventListener('click',()=>{
     repositionImg()
     modalCarImage[0].src = 'images/desktop/car/' + carouselInner[0].children[imgCount].children[0].src.replace(/^.*[\\\/]/, '');
   }, 500);
+}
+modalArrowLeftContainer[0].addEventListener('click',()=>{
+  modalLeftMoveFun()
 });
 
 // modal close box
@@ -139,6 +149,8 @@ function dragElement(elmnt) {
     // set the element's new position:
     elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
     elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+
   }
 
   function closeDragElement() {
@@ -149,7 +161,7 @@ function dragElement(elmnt) {
 }
 
 
-// test
+// Zoom wheel events
 var modalCarContainderInside = document.getElementsByClassName('modalCarContainderInside');
 
 modalCarContainderInside[0].addEventListener('wheel',(e)=>{
@@ -161,6 +173,13 @@ modalCarContainderInside[0].addEventListener('wheel',(e)=>{
   }
   console.log(e.deltaY);
 })
+
+
+
+
+
+
+
 
 
 

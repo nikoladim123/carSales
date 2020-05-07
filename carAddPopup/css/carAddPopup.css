@@ -388,3 +388,16 @@ body {
 }
 
 /* modal end */
+
+
+/* BS arrows fix */
+.card-header a h3 .car-header-span{
+  transform: rotate(90deg);
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+.card-header a.collapsed h3 .car-header-span{
+  transform: rotate(0);
+  /* color: red; */
+}
