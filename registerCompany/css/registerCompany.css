@@ -286,6 +286,7 @@ header {
 }
 
 .inputTextBox {
+  padding: 1px;
   margin-top: 0.751875vw;
     height: 4.125vw;
     border-radius: 20vw;
