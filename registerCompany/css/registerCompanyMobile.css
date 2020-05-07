@@ -5,6 +5,11 @@
     padding: 0.1px;
   }
 
+  nav{
+    background: #430076;
+    border-bottom: 1px solid white;
+  }
+
   .registerLeftContaier{
     display: none;
   }
