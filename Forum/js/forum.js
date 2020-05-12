@@ -6,7 +6,7 @@ for (var i = 0; i < moreButton.length; i++) {
       moreButton[i].nextElementSibling.style.maxHeight = '0vw';
     }
     if(e.target.innerText === 'More'){
-      e.target.nextElementSibling.style.maxHeight = '20vw';
+      e.target.nextElementSibling.style.maxHeight = '50vw';
       for (var i = 0; i < moreButton.length; i++) {
         moreButton[i].innerText = 'More';
       }
