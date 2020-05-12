@@ -139,7 +139,7 @@
                 <h3>Topics</h3>
               </div>
               <div class="topicContentBox">
-                <div class="topicItemBox">
+                <div class="topicItemBox" style="color:#60ceb5;">
                   <a href="#" style="color:#60ceb5;">Commerce Help</a>
                    <span>></span>
                 </div>
@@ -147,29 +147,37 @@
                   <a href="forumA.html">General Help</a>
                    <span>></span>
                 </div>
-                <div class="topicItemBox">
+                <!-- <div class="topicItemBox">
                   <a href="#">Commerce Help</a>
                    <span>></span>
                 </div>
                 <div class="topicItemBox">
                   <a href="#">Commerce Help</a>
                    <span>></span>
-                </div>
+                </div> -->
               </div>
             </div>
 
             <div class="PostsContainer">
 
               <div class="postInputContainer">
-                <input class="postInputButton" type="text" name="" value="" placeholder="Ask your question">
+                <input class="postInputButton" type="text" name="" value="" maxlength="0" placeholder="Ask your question">
                 <div class="postFormContainer">
-                  <img src="" alt="">
+                  <div class="postApostImageBox">
+                    <img src="images/avatar.jpg" alt="">
+                  </div>
                   <form class="postForm" action="index.html" method="post">
-                    <input type="text" name="" value="">
-                    <textarea name="name" rows="8" cols="80"></textarea>
+                    <input class="disscusionTitle" type="text" name="" value="" placeholder="Disscusion Title">
+                    <div class="textareaContainer">
+                      <textarea name="name" rows="3" cols="80" placeholder="Disscusion content"></textarea>
+                      <div class="textAreaUploadPhoto">
+                        <i class="fa fa-camera customCamera" aria-hidden="true" style="opacity: 0.8;"></i>
+                        <input class="cameraInput" type="file" name="" value="" placeholder="">
+                      </div>
+                    </div>
                     <div class="postFormButtonContainer">
                       <button type="button" name="button">Post</button>
-                      <button type="button" name="button">Cancel</button>
+                      <button class="cancelPost" type="button" name="button">Cancel</button>
                     </div>
                   </form>
                 </div>
@@ -289,6 +297,69 @@
             </div>
 
             <div class="postDiscusionContainer">
+              <div class="">
+                <input class="searchKeywords" type="text" name="" value="" placeholder="Search for keywords">
+              </div>
+
+              <div class="postDiscusionContent">
+                <div class="wroteCommentContainer">
+                  <div class="writeComentAvatar">
+                    <img src="images/avatar.jpg" alt="avatar">
+                  </div>
+                  <div class="writeComentInputBox">
+                    <form class="writeCommentForm" action="index.html" method="post">
+                      <input class="writeCommentInput" type="text" name="" value="" placeholder="Write a comment">
+                      <div class="writeCommentFormButtonsBox">
+                        <button type="button" name="button">Reply</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="replyCountContainer">
+                  <img src="images/replies.jpg" alt="">
+                  <p>10 replies</p>
+                </div>
+
+                <div class="replysContainer">
+
+                  <div class="singleReplyContainer">
+                    <div class="replyAvatar">
+                      <img src="images/userImage.jpg" alt="">
+                    </div>
+                    <div class="replyContent">
+                      <p class="replyName">Nik Jackleson</p>
+                      <p class="replyComment">i am comenting this post,i am comenting this post,i am comenting this post,i am comenting this post</p>
+                      <p class="replyDate">2 Years 10 Month ago</p>
+                    </div>
+                  </div>
+
+                  <div class="singleReplyContainer">
+                    <div class="replyAvatar">
+                      <img src="images/userImage.jpg" alt="">
+                    </div>
+                    <div class="replyContent">
+                      <p class="replyName">Nik Jackleson</p>
+                      <p class="replyComment">i am comenting this post,i am comenting this post,i am comenting this post,i am comenting this post</p>
+                      <p class="replyDate">2 Years 10 Month ago</p>
+                      <img src="images/postImage.jpg" alt="">
+                    </div>
+                  </div>
+
+                  <div class="singleReplyContainer">
+                    <div class="replyAvatar">
+                      <img src="images/userImage.jpg" alt="">
+                    </div>
+                    <div class="replyContent">
+                      <p class="replyName">Nik Jackleson</p>
+                      <p class="replyComment">i am comenting this post,i am comenting this post,i am comenting this post,i am comenting this post</p>
+                      <p class="replyDate">2 Years 10 Month ago</p>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/668nUCeBHyY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
 
             </div>
 

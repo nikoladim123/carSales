@@ -17,3 +17,37 @@ for (var i = 0; i < moreButton.length; i++) {
     }
   })
 }
+
+
+
+//post buttons logic
+var postInputButton = document.getElementsByClassName('postInputButton');
+var postFormContainer = document.getElementsByClassName('postFormContainer');
+var cancelPost = document.getElementsByClassName('cancelPost');
+var disscusionTitle = document.getElementsByClassName('disscusionTitle');
+
+postInputButton[0].addEventListener('click',()=>{
+  postFormContainer[0].style.maxHeight = '12vw';
+  postInputButton[0].style.maxHeight = '0vw';
+  postInputButton[0].style.opacity = '0';
+  disscusionTitle[0].focus();
+})
+
+cancelPost[0].addEventListener('click',()=>{
+  postFormContainer[0].style.maxHeight = '0vw';
+  postInputButton[0].style.maxHeight = '12vw';
+  postInputButton[0].style.opacity = '1';
+})
+
+
+// comment box input button show
+var writeCommentInput = document.getElementsByClassName('writeCommentInput');
+var writeCommentFormButtonsBox = document.getElementsByClassName('writeCommentFormButtonsBox');
+
+writeCommentInput[0].addEventListener('focus',()=>{
+  writeCommentFormButtonsBox[0].style.maxHeight = '7vw';
+})
+
+writeCommentInput[0].addEventListener('focusout',()=>{
+  writeCommentFormButtonsBox[0].style.maxHeight = '0vw';
+})
