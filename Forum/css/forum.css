@@ -295,6 +295,7 @@ body {
 }
 
 .postItemClientImage {
+  flex-shrink: 0;
   width: 7.32064vw;
   height: 7.32064vw;
   overflow: hidden;
