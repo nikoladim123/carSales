@@ -1,0 +1,258 @@
+body {
+  background: #121212;
+}
+
+.forumPageContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2.564333vw;
+}
+
+.forumContainer {
+  background: white;
+  height: 48vw;
+  width: 95%;
+  padding: 0.664841vw 1.368791vw 1.759874vw;
+}
+
+.helpContainer a {
+  color: #666;
+  font-size: .9516837vw;
+  transition: 0.5s;
+}
+
+.helpContainer a:hover {
+  color: #60ceb5;
+}
+
+.fa-arrow-left {
+  color: #60ceb5;
+}
+
+.forumContentContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-top: 1vw;
+}
+
+.forumContentContainer div {
+  /* border: 1px solid black; */
+  /* margin: 3px; */
+}
+
+/* TopicContainer */
+.topicContainer {
+  position: relative;
+  background: #f0f0f0;
+  border: 1px solid #c4c4c4;
+  min-height: 100%;
+}
+
+.topicHeaderBox {
+  background: #60ceb5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5124450vw 3.02489vw;
+  /* width: 7.1568vw; */
+  /* height: 1.95541vw; */
+}
+
+.topicHeaderBox h3 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.464128vw;
+}
+
+.topicContentBox {
+  background: #f7f7f7;
+  margin: 0.951683vw;
+}
+
+.topicItemBox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+  justify-content: space-between;
+}
+
+.topicItemBox:hover a {
+  color: #60ceb5;
+}
+
+.topicItemBox a {
+  color: #333;
+  transition: 0.5s ease;
+  font-size: 1.09809vw;
+  margin: 0.512445vw 0.8784773vw;
+}
+
+.topicItemBox span {
+  transform: scaleY(1.5);
+  font-size: 1vw;
+  display: inline-block;
+  margin-left: 0.21vw;
+  margin-right: 0.542vw;
+}
+
+/* PostsContainer */
+.PostsContainer {
+  position: relative;
+  width: 52%;
+  padding: 0.73206vw;
+  padding-top: 0;
+}
+
+.postInputContainer {}
+
+.postInputButton {
+  width: 24.25622vw;
+  padding: 0.5vw 0;
+  padding-left: 1vw;
+  border: 1px solid #c4c4c4;
+  outline: none;
+  font-size: 1.17130vw;
+}
+
+.postInputButton::placeholder {
+  opacity: 0.73;
+}
+
+.postFormContainer {
+  display: none;
+}
+
+.postForm {}
+
+.postFormButtonContainer {}
+
+.postsContainerDinamyc {
+  margin-top: 0.73206vw;
+  max-height: 40vw;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* width */
+.postsContainerDinamyc::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.postsContainerDinamyc::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background:#cccccc;
+
+}
+
+/* Handle */
+.postsContainerDinamyc::-webkit-scrollbar-thumb {
+  background: #3A3838;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.postsContainerDinamyc::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
+
+.postItemContainer {
+  position: relative;
+  border: 1px solid #c4c4c4;
+  padding: 0.73206vw;
+  padding-right: 0.219619vw;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+}
+
+.postItemContainer:hover {
+  background: #f7f7f7;
+  border: 1px solid #60ceb5;
+}
+
+.postItemTitle {
+  color: #60ceb5;
+  font-size: 1.6vw;
+  margin: 0;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+
+.postItemTitle:hover {
+  color: hsl(0, 0%, 40%);
+}
+
+.postItemContent {
+  display: flex;
+}
+
+.postItemClientImage {
+  width: 7.32064vw;
+  height: 7.32064vw;
+  overflow: hidden;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: .73vw;
+  margin-top: 0.3vw;
+  margin-left: 0;
+}
+
+.postItemClientImage img {
+  height: 100%;
+  /* max-width: 100%; */
+}
+
+.postItemDetailsContainer {}
+
+.postSenderName {
+  color: #3e5692;
+  font-size: 1.024890vw;
+  margin: 0;
+  margin-top: 0.2vw;
+}
+
+.postDate {
+  font-size: 0.87847730vw;
+  color: #a0a0a0;
+  margin: 0;
+}
+
+.postDescription {
+  font-size: .9516837vw;
+  color: #424242;
+  max-height: 5vw;
+  margin-bottom: 0;
+}
+
+.moreButton {
+  font-family: 'OpenSans-Bold';
+  margin: 0.15vw;
+  bottom: 0;
+  position: absolute;
+  left: 1.2vw;
+  font-weight: 800;
+  transition: 0.5s ease;
+  color: #333;
+  font-size: 1vw;
+}
+
+.moreButton:hover {
+  text-decoration: underline;
+  color: #60ceb5;
+}
+
+.moreContent {
+  transition: 0.75s ease;
+  max-height: 0vw;
+  overflow: hidden;
+  margin-bottom: 0.7vw;
+}
+
+/* postDiscusionContainer */
+.postDiscusionContainer {
+  position: relative;
+}

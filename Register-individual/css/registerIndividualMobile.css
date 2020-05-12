@@ -1,0 +1,275 @@
+@media (orientation:portrait) {
+  header {
+    background: linear-gradient(45deg, rgba(119, 57, 243, 1) 0%, rgba(119, 57, 243, 1) 14%, rgba(87, 235, 255, 1) 100%);
+    min-height: calc(100vh - 26.837929vw);
+    padding: 0.1px;
+  }
+  nav{
+    background: #430076;
+    border-bottom: 1px solid white;
+  }
+
+  .registerLeftContaier{
+    display: none;
+  }
+
+  .headerContainer h2{
+    display: none;
+  }
+
+  .stepExplanation{
+    /* display: none; */
+    font-size: 5.625vw;
+    color: white;
+    margin: 0;
+    margin-top: 18vw;
+    margin-left: 11vw;
+
+  }
+
+  .headerContainer {
+    position: relative;
+    width: 100%;
+    /* padding-top: 28vw; */
+  }
+
+  .whoWeAre {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #6653df;
+    background: #6653df;
+    width: 60vw;
+    height: 22.8125vw;
+    margin-left: 20vw;
+    text-align: center;
+    margin-top: 26.875vw;
+    margin-bottom: 8.4375vw;
+    box-shadow: 0px 0px 2vw rgba(0, 0, 0, 0.4);
+  }
+
+  .whoWeAre p {
+    font-size: 5.625vw;
+    color: #e8a121;
+    margin: 0;
+    font-family: 'OpenSans-Regular';
+    font-weight: 900;
+  }
+
+  .userTypeSelection {
+    margin-bottom: 20vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5.625vw;
+  }
+
+  .userTypeBox {
+    width: 40.8125vw;
+    margin-bottom: 12vw;
+    height: 74vw;
+  }
+
+  .userTypeBox img {
+    position: relative;
+    width: 100%;
+    height: 42.8125vw;
+  }
+
+  .userTypeBox p {
+    color: white;
+    font-family: 'OpenSans-Regular';
+    font-size: 4.375vw;
+    text-align: center;
+  }
+
+  /* REGISTER ONE START */
+  .registerMethodContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 9.375vw;
+    box-sizing: border-box;
+    margin-top: 3vw;
+  }
+
+  .registerMethodContainer a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .registerMethodBox {
+    margin-top: 2.1875vw;
+    height: 13.125vw;
+    border-radius: 20vw;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.35);
+    width: 100%;
+    font-size: 3.8375vw;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding-left: 0.2vw;
+  }
+
+  .selectHtwo{
+    font-size: 5.6vw;
+  padding-left: 8vw;
+  margin-top: 26vw;
+  }
+
+  .registerMethodBox img {
+    position: static;
+    left: 1vw;
+    top: 0.75vw;
+    width: 12vw;
+  }
+
+  .registerMethodBox p {
+    font-size: 4.625vw;
+    margin: 0;
+    margin-left: 1vw;
+  }
+
+  .logInWIthSocial{
+    width: 80%;
+    margin-left: 0;
+    margin-top: 5.625vw;
+  }
+
+  /* REGISTER ONE END */
+  /* REGISTER TWO START */
+  .registerForm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 9.375vw;
+    margin-top: 30.5vw;
+  }
+
+  .inputTextBox {
+    position: relative;
+    height: 13.125vw;
+    width: 100%;
+    margin-bottom: 2.1875vw;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid white;
+  }
+
+  .inputTextBox img {
+    position: absolute;
+    left: 1vw;
+    top: 0.75vw;
+    width: 12vw;
+  }
+
+  .inputText {
+    height: 100%;
+    border-radius: 20vw;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0.35);
+    width: 100%;
+    padding-left: 20%;
+    font-size: 4.375vw;
+  }
+
+  .checkBoxContainer {
+    display: flex;
+  }
+
+  .inputCheckBox {
+    transform: scale(5.5);
+    position: relative;
+    top: 7.5vw;
+    left: -5vw;
+  }
+
+  .checkBoxContainer p {
+    font-size: 5vw;
+    color: #fcad04;
+  }
+
+  .registerForm button {
+    font-size: 5.625vw;
+    background: #fcad04;
+    border-radius: 20vw;
+    border: 1px solid white;
+    width: 55.3125vw;
+    height: 13.75vw;
+    margin-left: 0;
+    color: #555555;
+    font-weight: 700;
+  }
+
+  /* REGISTER TWO END */
+
+
+  /* REGISTER THREE START */
+  .sellerTypeSelection {
+    margin-bottom: 20vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 0.625vw;
+    flex-wrap: wrap;
+    padding-top: 4vw;
+  }
+
+  .SelectTypeBox {
+      width: 39.24vw;
+      height: 63.24vw;
+      margin: 0px 0.54963vw;
+      box-shadow: 0 0 4vw rgba(0, 0, 0, 0.3);
+      transition: 0.5s ease;
+      position: relative;
+      margin-bottom: 7vw;
+      font-size: 1vw;
+  }
+
+
+  .SelectTypeBox::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    transition: 0.5s ease;
+  }
+
+  .SelectTypeBox:hover {
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.35);
+  }
+
+  .SelectTypeBox:hover::after {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .SelectTypeBox img {
+    position: relative;
+    width: 100%;
+    /* height: 42.8125vw; */
+  }
+
+  .SelectTypeBox:hover .sellerTypeDescription{
+    top: -14vw;
+  }
+
+  .sellerTypeDescription{
+    top: 0;
+    position: relative;
+    color: white;
+    font-family: 'OpenSans-Regular';
+    font-size: 3.375vw;
+    text-align: center;
+    transition: 0.75s ease;
+    z-index: 1;
+  }
+
+  /* REGISTER THREE END */
+
+}
