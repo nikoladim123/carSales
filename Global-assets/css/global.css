@@ -23,6 +23,10 @@
   src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
 }
 
+div{
+  /* border: 1px solid; */
+}
+
 *{
   box-sizing:border-box;
 }
@@ -200,7 +204,7 @@ nav {
 }
 
 .searchTriangle {
-  border: 0.75vw solid transparent;
+  border: 0.65vw solid transparent;
   border-top: 0.75vw solid #f49700;
   width: 0px;
   height: 0px;

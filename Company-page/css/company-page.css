@@ -1,0 +1,493 @@
+body {
+  background: #356cc0;
+  /* overflow: hidden; */
+}
+
+nav {
+  box-shadow: none;
+  background: transparent;
+}
+
+.searchPar{
+  color: #366fc8;
+  font-weight: 900;
+}
+/* fixes end */
+
+.headerTriangle {
+  background: #444343;
+  position: absolute;
+  width: 110vw;
+  height: 110vw;
+  top: -55vw;
+  left: -55vw;
+  transform: rotate(45deg);
+  box-shadow: inset 0px 0px 2.3837vw -1.16279vw rgba(0, 0, 0, 0.75);
+}
+
+.banerContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 88vw;
+  height: 50.314769vw;
+  background: #356cc0;
+  margin-left: 5.9vw;
+  margin-top: 4.25vw;
+  box-shadow: 0vw 5.1vw 8.1vw rgba(0, 0, 0, 0.515);
+}
+
+.headingContainer {
+  position: absolute;
+  left: 2.615012vw;
+  top: 4.6973365vw;
+}
+
+.headingContainer h2 {
+  font-size: 3.743341vw;
+  font-family: 'Morganite-Thin';
+  color: white;
+  letter-spacing: 0.8vw;
+  width: 26vw;
+  line-height: 1;
+}
+
+.headingContainer h1 {
+  font-size: 12.10653vw;
+  font-family: 'Morganite-Bold';
+  color: white;
+  letter-spacing: 0.21vw;
+}
+
+.banerCar {
+  position: relative;
+  width: 85.76271vw;
+  bottom: 7vw;
+}
+
+.rayAnimationsContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.rayAnimationsContainer img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 1s ease;
+  animation-direction: alternate;
+}
+
+.rayOne {
+  animation-name: rayOne;
+  animation-duration: 7s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  /* animation-direction:   ; */
+}
+
+.rayTwo {
+  animation-name: rayTwo;
+  animation-duration: 8.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+.rayThree {
+  animation-name: rayThree;
+  animation-delay: 3.35s;
+  animation-duration: 11s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  right: -2vw;
+}
+
+@keyframes rayOne {
+  0% {
+    opacity: 0.2;
+    top: 3vw;
+  }
+
+  25% {
+    opacity: 0.5;
+    top: 2vw;
+  }
+
+  75% {
+    opacity: 0.7;
+    top: 0vw;
+  }
+
+  100% {
+    opacity: 0.2;
+    top: 3vw;
+  }
+}
+
+@keyframes rayTwo {
+  100% {
+    opacity: 0.3;
+    top: 3vw;
+  }
+
+  75% {
+    opacity: 0.5;
+    top: 2vw;
+  }
+
+  25% {
+    opacity: 1;
+    top: 0vw;
+  }
+
+  0% {
+    opacity: 0.4;
+    top: 3vw;
+  }
+}
+
+@keyframes rayThree {
+  100% {
+    opacity: 0.1;
+    top: 2vw;
+  }
+
+  75% {
+    opacity: 0.3;
+    top: 4vw;
+  }
+
+  25% {
+    opacity: 0.6;
+    top: 0vw;
+  }
+
+  0% {
+    opacity: 0;
+    top: 1vw;
+  }
+}
+
+/* sectionSpecialThisMonth start */
+.sectionSpecialThisMonth {
+  position: relative;
+}
+
+.specialHeading {
+  background: #444343;
+  width: 89.394673vw;
+  height: 6.150121vw;
+  margin-left: 5.42372vw;
+  margin-top: 18.06295vw;
+}
+
+.specialHeading h2 {
+  font-size: 12.10653vw;
+  font-family: 'Morganite-bold';
+  color: #efc000;
+  margin: 0;
+  position: relative;
+  bottom: 7.8vw;
+  margin-left: 5vw;
+}
+
+.specialHeading h2 span {
+  font-size: 7.263922vw;
+  font-family: 'Morganite-Thin';
+  /* font-weight: 700; */
+  letter-spacing: 0.25vw;
+}
+
+.threeAddContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.8vw;
+}
+
+.threeAddContainer .addBox {
+  margin: 2.17917vw;
+}
+
+.addBox {
+  position: relative;
+  width: 24.503631vw;
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+.addImgBox {
+  width: 100%;
+  height: 16.3680vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.addImage {
+  width: 100%;
+}
+
+.adOverlayContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addBox:hover .adOverlayContainer {
+  opacity: 1;
+}
+
+.overlayItem {
+  position: relative;
+  margin: 0.5vw;
+  width: 2.179176vw;
+  height: 2.179176vw;
+  background: white;
+  transform: rotate(45deg);
+  transform: rotate(-90deg);
+  transition: 0.6s ease;
+  top: 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayItem:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.overlayItem:nth-child(2) {
+  transition-delay: 0.2s;
+}
+
+.addBox:hover .overlayItem {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.overlayItem:hover {
+  background: #ffd800;
+  cursor: pointer;
+}
+
+.overlayItem img {
+  transform: rotate(-45deg);
+  width: 49%;
+}
+
+.addDescriptionBox {
+  height: 10.411622vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addModelName {
+  color: #3c3d42;
+  font-size: 1.7433414043583535vw;
+  font-family: 'OpenSans-Bold';
+  font-weight: 900;
+  margin: 0;
+  margin-top: 1vw;
+}
+
+.addMilage {
+  color: #3c3d42;
+  font-size: 1.1622vw;
+  font-family: 'OpenSans-Regular';
+  margin: 0;
+}
+
+.addPrice {
+  color: #f79305;
+  font-size: 2.13075vw;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 1vw;
+}
+
+.addBasicInfoContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #e9e9e9;
+  padding-top: 2.082324vw;
+  padding-bottom: 0.5811138vw;
+}
+
+.basicInfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basicInfoBox img {
+  width: 1.69491vw;
+}
+
+.basicInfoBox p {
+  margin: 0;
+  font-size: 1.0082324vw;
+  font-family: 'OpenSans-Regular';
+  color: #a2a3aa;
+  font-weight: 800;
+  margin-left: 0.25vw;
+}
+
+/* sectionSpecialThisMonth end */
+/* sectionAboutUs start */
+.sectionAboutUs {
+  position: relative;
+  background: #ffffff;
+  display: flex;
+  padding-bottom: 5.859564vw;
+  padding-top: 7.651331vw;
+  margin-top: 15vw;
+  justify-content: space-between;
+}
+
+.sectionAboutUs h2 {
+  position: absolute;
+  font-size: 12.10653vw;
+  font-family: 'Morganite-Bold';
+  color: #f1c100;
+  margin: 0;
+  top: -11.54vw;
+  left: 7.60290vw;
+}
+.sectionAboutUs h2 span{
+  font-size: 7.263922vw;
+  font-family: 'Morganite-Thin';
+}
+
+.aboutUsDescription {
+  width: 30.16949vw;
+  margin-left: 7.60290vw;
+      margin-right: 4.6029vw;
+}
+
+.aboutUsDescription p {
+  font-size: 1.4527845vw;
+  color: #45464e;
+  line-height: 1.9;
+  /* font-family: ; */
+  position: relative;
+  margin-top: -0.7vw;
+}
+
+.aboutUsDescription button {
+  width: 19.37046vw;
+  height: 3.728813vw;
+  background: #f1c100;
+  color: #45464e;
+  font-size: 1.743341vw;
+  font-family: 'OpenSans-Bold';
+  font-weight: 900;
+  border: 0;
+  margin-top: 3vw;
+    filter: brightness(1);
+    transition: 0.3s ease;
+}
+
+.aboutUsDescription button:hover{
+  filter: brightness(1.1);
+}
+
+.aboutUsImageBox {
+  position: relative;
+  width: 56.2vw;
+}
+
+.aboutUsImageBox img {
+  width: 100%;
+}
+
+/* sectionAboutUs end */
+
+
+/* sectionBestOffers start */
+.sectionBestOffers{
+  position: relative;
+  padding: 0.1px;
+}
+.bestOffersTriangleBox{position: absolute;left: 0;top: 0;height: 18.59564vw;width: 13.898305vw;overflow: hidden;}
+.bestOffersTirnagle{
+  background: #444343;
+  transform: rotate(-52deg);
+  height: 50vw;
+  width: 50vw;
+  transform-origin: bottom left;
+  position: relative;
+  top: -32vw;
+  box-shadow: inset 0px 0px 2.3837vw -1.16279vw rgba(0, 0, 0, 0.75);
+}
+
+.bestOfferHeading {
+  background: #444343;
+  width: 89.394673vw;
+  height: 6.150121vw;
+  margin-left: 4.42372vw;
+  margin-top: 18.06295vw;
+}
+
+.bestOfferHeading h2 {
+  font-size: 12.10653vw;
+  font-family: 'Morganite-bold';
+  color: #efc000;
+  margin: 0;
+  position: relative;
+  bottom: 7.8vw;
+  margin-left: 5vw;
+}
+
+.bestOfferHeading h2 span {
+  font-size: 7.263922vw;
+  font-family: 'Morganite-Thin';
+  letter-spacing: 0.25vw;
+}
+
+.bestOfferWrapContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 91.394673vw;
+    margin-left: 3.42372vw;
+    margin-top: 2.4vw;
+}
+
+.bestOfferWrapContainer .addBox{
+      width: 21.203631vw;
+      margin-bottom: 1.9vw;
+}
+/* sectionBestOffers end */
+
+
+/* sectionWhyChoseUs start */
+.sectionWhyChoseUs{
+
+margin-top: 22.6vw;
+
+padding-top: 2vw;
+}
+.sectionWhyChoseUs .aboutUsDescription{
+  order:2;
+  width: 38.16949vw;
+  margin-left: 3.6029vw;
+}
+
+.sectionWhyChoseUs  h2{
+  top: -13.45vw;
+}
+/* end */
