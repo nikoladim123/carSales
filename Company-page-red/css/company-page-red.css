@@ -1,5 +1,5 @@
 body {
-  background: #356cc0;
+  background: black;
   /* overflow: hidden; */
 }
 
@@ -9,188 +9,91 @@ nav {
 }
 
 .searchPar {
-  color: #366fc8;
-  font-weight: 900;
+  color: black;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 /* fixes end */
-.headerTriangle {
-  background: #444343;
+
+/* section baner area start */
+.banerArea{
+ background: #d7cfcb;
+}
+.banerBGred{
+  width: 100%;
   position: absolute;
-  width: 110vw;
-  height: 110vw;
-  top: -55vw;
-  left: -55vw;
-  transform: rotate(45deg);
-  box-shadow: inset 0px 0px 2.3837vw -1.16279vw rgba(0, 0, 0, 0.75);
+  right: 0;
+  top: 0;
 }
-
-.banerContainer {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  width: 88vw;
-  height: 50.314769vw;
-  background: #356cc0;
-  margin-left: 5.9vw;
-  margin-top: 4.25vw;
-  box-shadow: 0vw 5.1vw 8.1vw rgba(0, 0, 0, 0.515);
-}
-
-.headingContainer {
-  position: absolute;
-  left: 2.615012vw;
-  top: 4.6973365vw;
-}
-
-.headingContainer h2 {
-  font-size: 3.743341vw;
-  font-family: 'Morganite-Thin';
-  color: white;
-  letter-spacing: 0.8vw;
-  width: 26vw;
-  line-height: 1;
-  margin: 0;
-}
-
-.headingContainer h1 {
-  font-size: 12.10653vw;
+.banerArea h1{
+  color: #ff3f00;
+  font-size: 20.14527vw;
   font-family: 'Morganite-Bold';
-  color: white;
-  letter-spacing: 0.21vw;
-  margin: 0;
-}
-
-.banerCar {
   position: relative;
-  width: 85.76271vw;
-  bottom: 7vw;
+  margin: 0;
+  margin-top: 7vw;
+  margin-left: 4.5vw;
+}
+.banerArea h1 span{
+  font-size: 12.1065vw;
+  font-family: 'Morganite-Light';
 }
 
-.rayAnimationsContainer {
-  position: absolute;
-  top: 0;
-  right: 0;
+.banerContact{
+  position: relative;
+  text-align: center;
+  margin-top: 45vw;
+  margin-bottom: -7vw;
 }
-
-.rayAnimationsContainer img {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transition: 1s ease;
-  animation-direction: alternate;
+.openDate{
+  font-size: 2.1307506vw;
+  color: #ff3f00;
+  margin-bottom: 0;
 }
-
-.rayOne {
-  animation-name: rayOne;
-  animation-duration: 7s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  /* animation-direction:   ; */
+.openTime{
+  font-size: 1.4527845vw;
+  color: #ff3f00;
+  margin: 0;
+  margin-top: -0.3vw;
 }
-
-.rayTwo {
-  animation-name: rayTwo;
-  animation-duration: 8.5s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
+.location{
+  font-size: 1.4527845vw;
+  margin: 0;
+  margin-top: 2vw;
 }
-
-.rayThree {
-  animation-name: rayThree;
-  animation-delay: 3.35s;
-  animation-duration: 11s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  right: -2vw;
+.telNumber{
+  font-size: 2.32445vw;
+  color: #ff3f00;
+  cursor: pointer;
+  font-family: 'OpenSans-Bold';
+  font-weight: 900;
 }
-
-@keyframes rayOne {
-  0% {
-    opacity: 0.2;
-    top: 3vw;
-  }
-
-  25% {
-    opacity: 0.5;
-    top: 2vw;
-  }
-
-  75% {
-    opacity: 0.7;
-    top: 0vw;
-  }
-
-  100% {
-    opacity: 0.2;
-    top: 3vw;
-  }
+.telNumber:hover{
+  text-decoration: underline;
 }
-
-@keyframes rayTwo {
-  100% {
-    opacity: 0.3;
-    top: 3vw;
-  }
-
-  75% {
-    opacity: 0.5;
-    top: 2vw;
-  }
-
-  25% {
-    opacity: 1;
-    top: 0vw;
-  }
-
-  0% {
-    opacity: 0.4;
-    top: 3vw;
-  }
-}
-
-@keyframes rayThree {
-  100% {
-    opacity: 0.1;
-    top: 2vw;
-  }
-
-  75% {
-    opacity: 0.3;
-    top: 4vw;
-  }
-
-  25% {
-    opacity: 0.6;
-    top: 0vw;
-  }
-
-  0% {
-    opacity: 0;
-    top: 1vw;
-  }
-}
+/* section baner area end */
 
 /* sectionSpecialThisMonth start */
 .sectionSpecialThisMonth {
   position: relative;
+  /* background: black; */
+  padding: 0.1px;
+  margin-top: 14vw;
 }
 
 .specialHeading {
-  background: #444343;
+  background: black;
   width: 89.394673vw;
   height: 6.150121vw;
   margin-left: 5.42372vw;
-  margin-top: 18.06295vw;
+  margin-top: 12.06295vw;
 }
 
 .specialHeading h2 {
   font-size: 12.10653vw;
   font-family: 'Morganite-bold';
-  color: #efc000;
+  color: #ff3f00;
   margin: 0;
   position: relative;
   bottom: 7.8vw;
@@ -208,7 +111,7 @@ nav {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 1.8vw;
+  margin-top: -1.2vw;
 }
 
 .threeAddContainer .addBox {
@@ -218,7 +121,7 @@ nav {
 .addBox {
   position: relative;
   width: 24.503631vw;
-  background: #f2f2f2;
+  background: #d7cfcb;
   cursor: pointer;
 }
 
@@ -352,21 +255,21 @@ nav {
 /* sectionAboutUs start */
 .sectionAboutUs {
   position: relative;
-  background: #ffffff;
+  background: #d7cfcb;
   display: flex;
-  padding-bottom: 5.859564vw;
-  padding-top: 7.651331vw;
+  padding-bottom: 8.859564vw;
+  padding-top: 23vw;
   margin-top: 15vw;
   justify-content: space-between;
 }
 
 .sectionAboutUs h2 {
-  position: absolute;
-  font-size: 12.10653vw;
+  font-size: 15.10653vw;
   font-family: 'Morganite-Bold';
-  color: #f1c100;
+  color: #ff3f00;
   margin: 0;
-  top: -11.54vw;
+  position: absolute;
+  top: 6.46vw;
   left: 7.60290vw;
 }
 
@@ -402,6 +305,7 @@ nav {
   margin-top: 3vw;
   filter: brightness(1);
   transition: 0.3s ease;
+  display: none;
 }
 
 .aboutUsDescription button:hover {
@@ -412,6 +316,7 @@ nav {
   position: relative;
   width: 56.2vw;
   height: 44vw;
+  overflow: hidden;
 }
 .aboutUsRevealColorOne, .whyChoseUsRevealColorOne{
   position: absolute;
@@ -419,7 +324,7 @@ nav {
   height: 100%;
   right: 0;
   top: 0;
-  background: #f1c100;
+  background: #ff3f00;
   transition: 1s ease-in;
 }
 .aboutUsRevealColorTwo, .whyChoseUsRevealColorTwo{
@@ -468,20 +373,21 @@ nav {
   position: relative;
   top: -32vw;
   box-shadow: inset 0px 0px 2.3837vw -1.16279vw rgba(0, 0, 0, 0.75);
+  display: none;
 }
 
 .bestOfferHeading {
-  background: #444343;
+  background: black;
   width: 89.394673vw;
   height: 6.150121vw;
   margin-left: 4.42372vw;
-  margin-top: 18.06295vw;
+  margin-top: 14.06295vw;
 }
 
 .bestOfferHeading h2 {
   font-size: 12.10653vw;
   font-family: 'Morganite-bold';
-  color: #efc000;
+  color: #ff3f00;
   margin: 0;
   position: relative;
   bottom: 7.8vw;
@@ -500,7 +406,7 @@ nav {
   justify-content: space-between;
   width: 91.394673vw;
   margin-left: 3.42372vw;
-  margin-top: 2.4vw;
+  margin-top: 0;
 }
 
 .bestOfferWrapContainer .addBox {
@@ -512,8 +418,8 @@ nav {
 /* sectionWhyChoseUs start */
 .sectionWhyChoseUs {
   margin-top: 22.6vw;
-  padding-top: 2vw;
-  padding-bottom: 21vw;
+  padding-top: 21.5vw;
+  padding-bottom: 24.5vw;
 }
 
 .sectionWhyChoseUs .aboutUsDescription {
@@ -523,7 +429,7 @@ nav {
 }
 
 .sectionWhyChoseUs h2 {
-  top: -13.45vw;
+  top: 4.55vw;
 }
 
 /* end */
@@ -536,7 +442,7 @@ nav {
   position: absolute;
   font-size: 12.10653vw;
   font-family: 'Morganite-Bold';
-  color: #f1c100;
+  color: #ff3f00;
   margin: 0;
   top: -11.54vw;
   left: 7.60290vw;
@@ -552,15 +458,17 @@ nav {
 }
 
 .feedBackContainer {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100%;
   left: 0;
   top: 0;
   /* border: 1px solid; */
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 3.5vw;
+  padding-bottom: 29vw;
+  background: #ff3f00;
 }
 
 .clientFeedbackBox {
